@@ -48,27 +48,27 @@ const Contact = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-8">Get in Touch</h2>
             <div className="space-y-6">
               <div className="flex items-start">
-                <Mail className="h-6 w-6 text-blue-600 mt-1" />
+                <Mail className="h-6 w-6 text-black mt-1" /> {/* Changed icon color to black */}
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Email</h3>
-                  <p className="text-gray-600">info@medobyte.com</p>
+                  <p className="text-gray-600">contact@medobyte.com</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <Phone className="h-6 w-6 text-blue-600 mt-1" />
+                <Phone className="h-6 w-6 text-black mt-1" /> {/* Changed icon color to black */}
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+91 8547864741</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <MapPin className="h-6 w-6 text-blue-600 mt-1" />
+                <MapPin className="h-6 w-6 text-black mt-1" /> {/* Changed icon color to black */}
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Address</h3>
                   <p className="text-gray-600">
-                    123 Business Street<br />
-                    Tech City, TC 12345<br />
-                    United States
+                    Wayanad<br />
+                    Kerala<br />
+                    India
                   </p>
                 </div>
               </div>
