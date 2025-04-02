@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <Monitor className="h-8 w-8 text-white" />
-              <span className="text-xl font-bold text-white">Medobyte</span>
+              <span className="text-xl font-bold text-white">MEDOBYTE</span>
             </Link>
           </div>
 
