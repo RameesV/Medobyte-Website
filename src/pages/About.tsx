@@ -74,7 +74,7 @@ const About = () => {
         </motion.div>
 
         {/* Team Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
@@ -110,7 +110,7 @@ const About = () => {
               <p className="text-gray-600">Technical Lead</p>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
