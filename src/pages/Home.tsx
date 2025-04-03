@@ -192,13 +192,13 @@ const Home = () => {
               Ready to Elevate Your Digital Journey?
             </h2>
             <Link to='/contact'>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Contact Us Today
-            </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Contact Us Today
+              </motion.button>
             </Link>
           </div>
         </div>
