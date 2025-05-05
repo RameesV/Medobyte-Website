@@ -56,64 +56,25 @@ const About = () => {
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <Users className="h-12 w-12 text-black mx-auto mb-4" /> {/* Changed icon color to black */}
+              <Users className="h-12 w-12 text-black mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Client Focus</h3>
               <p className="text-gray-600">We put our clients' success at the heart of everything we do, building strong partnerships and delivering solutions tailored to their unique needs.</p>
             </div>
             <div className="text-center">
-              <Target className="h-12 w-12 text-black mx-auto mb-4" /> {/* Changed icon color to black */}
+              <Target className="h-12 w-12 text-black mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Innovation</h3>
               <p className="text-gray-600">We embrace new technologies and creative solutions, continuously seeking ways to improve and provide cutting-edge services.</p>
             </div>
             <div className="text-center">
-              <Award className="h-12 w-12 text-black mx-auto mb-4" /> {/* Changed icon color to black */}
+              <Award className="h-12 w-12 text-black mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Excellence</h3>
               <p className="text-gray-600">We strive for excellence in every project we undertake, maintaining high standards of quality and professionalism in all aspects of our work.</p>
             </div>
           </div>
         </motion.div>
-
-        {/* Team Section */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="text-center"
-        >
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">Our Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-                alt="Team member"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-semibold">John Smith</h3>
-              <p className="text-gray-600">CEO & Founder</p>
-            </div>
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-                alt="Team member"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-semibold">Sarah Johnson</h3>
-              <p className="text-gray-600">Digital Marketing Director</p>
-            </div>
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-                alt="Team member"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-semibold">Michael Brown</h3>
-              <p className="text-gray-600">Technical Lead</p>
-            </div>
-          </div>
-        </motion.div> */}
       </div>
     </div>
   );
 };
 
-export default About;
+export default About; 

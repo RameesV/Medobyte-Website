@@ -79,7 +79,7 @@ const Services = () => {
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-gray-600">
-                    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> {/* bullet color changed to black */}
+                    <span className="w-2 h-2 bg-black rounded-full mr-2"></span>
                     {feature}
                   </li>
                 ))}
@@ -92,4 +92,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Services; 

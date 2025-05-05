@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ShoppingCart, TrendingUp, Globe, Code, Lightbulb, Users } from 'lucide-react';
-import { Link } from 'react-router-dom'; // Import Link for routing
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
   const fullText = "Unlock Your Digital Potential with Medobyte";
   const typingSpeed = 100;
-  const servicesRef = useRef(null); // Ref for services section
+  const servicesRef = useRef(null);
 
   useEffect(() => {
     let charIndex = 0;
@@ -77,7 +77,7 @@ const Home = () => {
               whileHover={{ scale: 1.05, backgroundColor: "#ffffff" }}
               whileTap={{ scale: 0.95 }}
               className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
-              onClick={handleExploreClick} // Scroll to services section
+              onClick={handleExploreClick}
             >
               Explore Our Solutions
             </motion.button>
@@ -86,7 +86,6 @@ const Home = () => {
       </motion.section>
 
       <section ref={servicesRef} className="py-20 bg-white">
-        {/* ... (services section content remains the same) */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-black">
@@ -207,4 +206,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home; 
