@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ShoppingCart, TrendingUp, Globe, Code, Lightbulb, Users, Target, Heart, Eye, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Banner from '../components/Banner';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
@@ -56,6 +57,7 @@ const Home = () => {
   return (
     <div>
 
+<Banner />
 <motion.h2 className="text-4xl font-bold text-gray-900 mb-4 text-center mb-16 pt-10">
             Who We Are
           </motion.h2>
