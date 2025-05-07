@@ -57,234 +57,122 @@ const Home = () => {
   return (
     <div className="bg-black">
       <Banner />
-      <motion.h2 className="text-4xl font-bold text-white mb-4 text-center mb-16 pt-10">
-            Who We Are
-          </motion.h2>
-          <motion.p
-className="text-xl text-gray-300 max-w-3xl mx-auto"
-          >
-            We are a team of digital experts specializing in e-commerce development and digital marketing. Our mission is to help businesses thrive in the digital landscape by creating innovative solutions that drive growth and success.
-          </motion.p>
+      <motion.h2 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="text-4xl font-bold text-white mb-4 text-center mb-16 pt-10"
+      >
+        Who We Are
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="text-xl text-gray-300 max-w-3xl mx-auto"
+      >
+        We are a team of digital experts specializing in e-commerce development and digital marketing. Our mission is to help businesses thrive in the digital landscape by creating innovative solutions that drive growth and success.
+      </motion.p>
 
       <section ref={servicesRef} className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
-            >
-              <ShoppingCart className="h-12 w-12 text-red-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                E-commerce Mastery
-              </h3>
-              <p className="text-gray-300">
-                Build and optimize your online store for seamless customer
-                experiences and increased conversions.
-              </p>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
-            >
-              <TrendingUp className="h-12 w-12 text-red-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                Data-Driven Marketing
-              </h3>
-              <p className="text-gray-300">
-                Reach your target audience with strategic campaigns that deliver
-                measurable results and growth.
-              </p>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
-            >
-              <Globe className="h-12 w-12 text-red-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                Modern Web Solutions
-              </h3>
-              <p className="text-gray-300">
-                Create responsive, high-performance websites that reflect your
-                brand and engage your customers.
-              </p>
-            </motion.div>
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
-            >
-              <Code className="h-12 w-12 text-red-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                Custom Development
-              </h3>
-              <p className="text-gray-300">
-                Tailored software and application development to meet your
-                unique business needs.
-              </p>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
-            >
-              <Lightbulb className="h-12 w-12 text-red-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                Innovative Strategies
-              </h3>
-              <p className="text-gray-300">
-                Creative solutions and forward-thinking strategies to keep you
-                ahead of the competition.
-              </p>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
-            >
+            {[
+              <ShoppingCart className="h-12 w-12 text-red-600 mx-auto mb-4" />,
+              <TrendingUp className="h-12 w-12 text-red-600 mx-auto mb-4" />,
+              <Globe className="h-12 w-12 text-red-600 mx-auto mb-4" />,
+              <Code className="h-12 w-12 text-red-600 mx-auto mb-4" />,
+              <Lightbulb className="h-12 w-12 text-red-600 mx-auto mb-4" />,
               <Users className="h-12 w-12 text-red-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                User Experience Design
-              </h3>
-              <p className="text-gray-300">
-                Focus on user-centered design to create intuitive and engaging
-                digital experiences.
-              </p>
-            </motion.div>
+            ].map((icon, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.7, delay: 0.15 * idx, type: 'spring', stiffness: 300, damping: 20 }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: '0 8px 32px 0 rgba(220,38,38,0.25)',
+                  borderColor: 'rgb(220 38 38)'
+                }}
+                className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
+              >
+                {icon}
+                <h3 className="text-xl font-semibold mb-4 text-white">
+                  {[
+                    'E-commerce Mastery',
+                    'Data-Driven Marketing',
+                    'Modern Web Solutions',
+                    'Custom Development',
+                    'Innovative Strategies',
+                    'User Experience Design'
+                  ][idx]}
+                </h3>
+                <p className="text-gray-300">
+                  {[
+                    'Build and optimize your online store for seamless customer experiences and increased conversions.',
+                    'Reach your target audience with strategic campaigns that deliver measurable results and growth.',
+                    'Create responsive, high-performance websites that reflect your brand and engage your customers.',
+                    'Tailored software and application development to meet your unique business needs.',
+                    'Creative solutions and forward-thinking strategies to keep you ahead of the competition.',
+                    'Focus on user-centered design to create intuitive and engaging digital experiences.'
+                  ][idx]}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-gray-900">
+      <section className="pt-0 pb-12 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-3xl font-bold text-white mb-4"
-            >
-              Our Core Principles
-            </motion.h2>
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-gray-300 max-w-3xl mx-auto"
-            >
-              Guiding our journey towards excellence and innovation in digital solutions
-            </motion.p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">Our Core Principles</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Value Card */}
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ 
-                scale: 1.02,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2)"
-              }}
-              className="bg-black p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
+              transition={{ duration: 0.7, delay: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="relative rounded-2xl overflow-hidden bg-cover bg-center min-h-[320px] flex flex-col justify-end p-8"
+              style={{backgroundImage: 'url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80)'}}
             >
-              <div className="absolute top-0 left-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 right-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
-              <Heart className="w-12 h-12 text-red-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-600 transition-colors duration-300">Our Values</h3>
-              <ul className="space-y-3 text-gray-300">
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Innovation and creativity in every solution
-                </li>
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Integrity and transparency in all dealings
-                </li>
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Excellence in execution and delivery
-                </li>
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Customer-centric approach
-                </li>
-              </ul>
+              <div className="absolute inset-0 bg-black/70 z-0" />
+              <div className="relative z-10">
+                <span className="text-sm font-semibold text-red-500 mb-2">OUR VALUE</span>
+                <h3 className="text-xl font-semibold mb-4 text-white">Your Digital Future, Our Expertise: Medobyte Delivers Excellence.</h3>
+                <p className="text-gray-300 text-lg mb-6">Our team of professional web designers, developers, and digital marketers bring their skills above and beyond the ordinary to each and every project to make your dream come true.</p>
+              </div>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              whileHover={{ 
-                scale: 1.02,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2)"
-              }}
-              className="bg-black p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
-            >
-              <div className="absolute top-0 left-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 right-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
-              <Target className="w-12 h-12 text-red-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-600 transition-colors duration-300">Our Mission</h3>
-              <p className="text-gray-300 mb-4 group-hover:translate-y-1 transition-transform duration-300">
-                To empower businesses with cutting-edge digital solutions that drive growth and success in the e-commerce landscape.
-              </p>
-              <ul className="space-y-3 text-gray-300">
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Transform digital presence into business success
-                </li>
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Deliver exceptional value to our clients
-                </li>
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Stay ahead of digital trends and technologies
-                </li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              whileHover={{ 
-                scale: 1.02,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2)"
-              }}
-              className="bg-black p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
-            >
-              <div className="absolute top-0 left-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 right-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
-              <Eye className="w-12 h-12 text-red-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-600 transition-colors duration-300">Our Vision</h3>
-              <p className="text-gray-300 mb-4 group-hover:translate-y-1 transition-transform duration-300">
-                To be the leading digital transformation partner, recognized for our innovative solutions and exceptional service in the e-commerce and digital marketing space.
-              </p>
-              <ul className="space-y-3 text-gray-300">
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Pioneer in digital innovation
-                </li>
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Global leader in e-commerce solutions
-                </li>
-                <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-red-600 mr-2">•</span>
-                  Trusted partner for digital success
-                </li>
-              </ul>
-            </motion.div>
+            <div className="flex flex-col gap-8">
+              {/* Mission Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.15 }}
+                viewport={{ once: true, amount: 0.3 }}
+                className="relative rounded-2xl bg-red-600 p-8 flex-1 flex flex-col justify-between shadow-lg"
+              >
+                <span className="text-sm font-semibold text-white mb-2">OUR MISSION</span>
+                <h3 className="text-xl font-semibold mb-4 text-white">Managed IT Mastery: Enhancing Operations with Expert Support</h3>
+                <p className="text-gray-300 text-lg">Our mission is to develop Websites and Software that is most reliable and cost-efficient in a timely manner and to provide customized services which suit all your designing and developing needs.</p>
+              </motion.div>
+              {/* Vision Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
+                className="relative rounded-2xl bg-gray-900 p-8 flex-1 flex flex-col justify-between shadow-lg"
+              >
+                <span className="text-sm font-semibold text-white mb-2">OUR VISION</span>
+                <h3 className="text-xl font-semibold mb-4 text-white">Crafting Tomorrow's Solutions: Medobyte Web Development Insights</h3>
+                <p className="text-gray-300 text-lg">Our passion for what we do led us here. Our vision is to provide the world with the best IT consulting and software development services while taking care of our people and honoring our values.</p>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -363,7 +251,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
                 <div className="relative">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                      <Lightbulb className="w-6 h-6 text-green-600" />
+                      <Lightbulb className="w-6 h-6 text-red-600" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Innovative Solutions</h3>
                   </div>
@@ -401,25 +289,25 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
                 <div className="relative">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                      <Clock className="w-6 h-6 text-purple-600" />
+                      <Clock className="w-6 h-6 text-red-600" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">24/7 Support</h3>
                   </div>
-                  <p className="text-gray-300 mb-6">
+                  <p className="text-white mb-6">
                     Our dedicated support team is always ready to help you succeed in your digital journey.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
-                      Round-the-clock assistance
+                      <span className="text-white">Round-the-clock assistance</span>
                     </li>
                     <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
-                      Quick response times
+                      <span className="text-white">Quick response times</span>
                     </li>
                     <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
-                      Dedicated account managers
+                      <span className="text-white">Dedicated account managers</span>
                     </li>
                   </ul>
                 </div>
@@ -436,7 +324,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
                 <div className="relative">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
-                      <TrendingUp className="w-6 h-6 text-orange-600" />
+                      <TrendingUp className="w-6 h-6 text-red-600" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Proven Results</h3>
                   </div>
@@ -495,7 +383,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-red-900 rounded-full flex items-center justify-center mr-4">
-                  <ShoppingCart className="w-6 h-6 text-red-400" />
+                  <ShoppingCart className="w-6 h-6 text-red-600" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">E-commerce Solutions</h3>
               </div>
@@ -533,12 +421,13 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 overflow-hidden rounded-lg">
+            <div className="lg:w-1/2 overflow-hidden rounded-lg relative">
               <img 
                 src="https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg"
                 alt="E-commerce Solutions"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
+              <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" />
             </div>
           </motion.div>
 
@@ -553,7 +442,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                  <TrendingUp className="w-6 h-6 text-green-600" />
+                  <TrendingUp className="w-6 h-6 text-red-600" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">Digital Marketing</h3>
               </div>
@@ -591,12 +480,13 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 overflow-hidden rounded-lg">
+            <div className="lg:w-1/2 overflow-hidden rounded-lg relative">
               <img 
                 src="https://img.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_53876-167088.jpg"
                 alt="Digital Marketing"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
+              <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" />
             </div>
           </motion.div>
 
@@ -611,7 +501,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                  <Code className="w-6 h-6 text-purple-600" />
+                  <Code className="w-6 h-6 text-red-600" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">Web Development</h3>
               </div>
@@ -649,12 +539,13 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 overflow-hidden rounded-lg">
+            <div className="lg:w-1/2 overflow-hidden rounded-lg relative">
               <img 
                 src="https://img.freepik.com/premium-photo/html-system-websites-concept_23-2150323528.jpg"
                 alt="Web Development"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
+              <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" />
             </div>
           </motion.div>
         </div>
