@@ -13,7 +13,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <main className="px-6 md:px-20 pb-20">
+      <main className="px-6 md:px-20 pb-15">
         <ContactForm />
       </main>
     </div>

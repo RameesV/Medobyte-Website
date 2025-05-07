@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import bannerImage from '../../../assets/images/servicepagebannerimage.jpg'; // Your path
 
 const BannerSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -77,13 +76,16 @@ const BannerSection = () => {
 
   return (
     <div
-      className="relative mt-16 bg-cover bg-center bg-no-repeat"
+      className="relative mt-16"
       style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(${bannerImage})`,
+        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1653361953232-cd154e54beff?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: '#000', // Optional fallback
       }}
     >
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-center py-16 lg:py-24">
         <div className="w-full lg:w-2/3 text-left">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
