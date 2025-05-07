@@ -58,7 +58,7 @@ const Services = () => {
 
   return (
     <>
-    <div className='servicepage-section'>
+    <div className='servicepage-section overflow-x-hidden'>
       <BannerSection />
 
       <div className="bg-gray-900 py-20">
