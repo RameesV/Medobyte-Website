@@ -30,15 +30,15 @@ const Banner = () => {
   return (
     <div className="relative mt-16">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 bg-black/50 z-0" />
+      <div className="absolute inset-0 bg-black/70 z-0" />
       <div 
         className="relative bg-cover bg-center h-[300px] md:h-[400px]"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")'
+          backgroundImage: 'url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80")'
         }}
       >
         {/* Content Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-purple-600/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-gray-900/90" />
         
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-center">
@@ -52,7 +52,7 @@ const Banner = () => {
               className="text-center p-4 text-white"
             >
               <div className="text-4xl font-bold mb-2">{contents[currentIndex].number}</div>
-              <div className="text-lg">{contents[currentIndex].text}</div>
+              <div className="text-lg text-gray-300">{contents[currentIndex].text}</div>
             </motion.div>
           </AnimatePresence>
         </div>
