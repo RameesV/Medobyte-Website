@@ -74,7 +74,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               whileHover={{ y: -10 }}
               className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <ShoppingCart className="h-12 w-12 text-white mx-auto mb-4" />
+              <ShoppingCart className="h-12 w-12 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-white">
                 E-commerce Mastery
               </h3>
@@ -88,7 +88,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               whileHover={{ y: -10 }}
               className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <TrendingUp className="h-12 w-12 text-white mx-auto mb-4" />
+              <TrendingUp className="h-12 w-12 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-white">
                 Data-Driven Marketing
               </h3>
@@ -102,7 +102,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               whileHover={{ y: -10 }}
               className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <Globe className="h-12 w-12 text-white mx-auto mb-4" />
+              <Globe className="h-12 w-12 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-white">
                 Modern Web Solutions
               </h3>
@@ -115,7 +115,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               whileHover={{ y: -10 }}
               className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <Code className="h-12 w-12 text-white mx-auto mb-4" />
+              <Code className="h-12 w-12 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-white">
                 Custom Development
               </h3>
@@ -129,7 +129,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               whileHover={{ y: -10 }}
               className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <Lightbulb className="h-12 w-12 text-white mx-auto mb-4" />
+              <Lightbulb className="h-12 w-12 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-white">
                 Innovative Strategies
               </h3>
@@ -143,7 +143,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               whileHover={{ y: -10 }}
               className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <Users className="h-12 w-12 text-white mx-auto mb-4" />
+              <Users className="h-12 w-12 text-red-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4 text-white">
                 User Experience Design
               </h3>
@@ -194,25 +194,25 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               }}
               className="bg-black p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
             >
-              <div className="absolute top-0 left-0 w-full h-1 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 right-0 w-full h-1 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
-              <Heart className="w-12 h-12 text-blue-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-600 transition-colors duration-300">Our Values</h3>
+              <div className="absolute top-0 left-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              <div className="absolute bottom-0 right-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
+              <Heart className="w-12 h-12 text-red-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-600 transition-colors duration-300">Our Values</h3>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Innovation and creativity in every solution
                 </li>
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Integrity and transparency in all dealings
                 </li>
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Excellence in execution and delivery
                 </li>
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Customer-centric approach
                 </li>
               </ul>
@@ -229,24 +229,24 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               }}
               className="bg-black p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
             >
-              <div className="absolute top-0 left-0 w-full h-1 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 right-0 w-full h-1 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
-              <Target className="w-12 h-12 text-green-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-600 transition-colors duration-300">Our Mission</h3>
+              <div className="absolute top-0 left-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              <div className="absolute bottom-0 right-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
+              <Target className="w-12 h-12 text-red-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-600 transition-colors duration-300">Our Mission</h3>
               <p className="text-gray-300 mb-4 group-hover:translate-y-1 transition-transform duration-300">
                 To empower businesses with cutting-edge digital solutions that drive growth and success in the e-commerce landscape.
               </p>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-green-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Transform digital presence into business success
                 </li>
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-green-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Deliver exceptional value to our clients
                 </li>
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-green-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Stay ahead of digital trends and technologies
                 </li>
               </ul>
@@ -263,24 +263,24 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               }}
               className="bg-black p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
             >
-              <div className="absolute top-0 left-0 w-full h-1 bg-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              <div className="absolute bottom-0 right-0 w-full h-1 bg-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
-              <Eye className="w-12 h-12 text-purple-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-purple-600 transition-colors duration-300">Our Vision</h3>
+              <div className="absolute top-0 left-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              <div className="absolute bottom-0 right-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
+              <Eye className="w-12 h-12 text-red-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-600 transition-colors duration-300">Our Vision</h3>
               <p className="text-gray-300 mb-4 group-hover:translate-y-1 transition-transform duration-300">
                 To be the leading digital transformation partner, recognized for our innovative solutions and exceptional service in the e-commerce and digital marketing space.
               </p>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-purple-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Pioneer in digital innovation
                 </li>
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-purple-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Global leader in e-commerce solutions
                 </li>
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-purple-600 mr-2">•</span>
+                  <span className="text-red-600 mr-2">•</span>
                   Trusted partner for digital success
                 </li>
               </ul>
@@ -324,11 +324,11 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
                 transition={{ duration: 0.5 }}
                 className="bg-black p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                      <Users className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                      <Users className="w-6 h-6 text-red-600" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Expert Team</h3>
                   </div>
@@ -337,15 +337,15 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       Certified professionals
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       Industry expertise
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       Continuous training
                     </li>
                   </ul>
@@ -409,15 +409,15 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
                     Our dedicated support team is always ready to help you succeed in your digital journey.
                   </p>
                   <ul className="space-y-3">
-                    <li className="flex items-center text-gray-300">
+                    <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
                       Round-the-clock assistance
                     </li>
-                    <li className="flex items-center text-gray-300">
+                    <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
                       Quick response times
                     </li>
-                    <li className="flex items-center text-gray-300">
+                    <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
                       Dedicated account managers
                     </li>
@@ -494,8 +494,8 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mr-4">
-                  <ShoppingCart className="w-6 h-6 text-blue-400" />
+                <div className="w-12 h-12 bg-red-900 rounded-full flex items-center justify-center mr-4">
+                  <ShoppingCart className="w-6 h-6 text-red-400" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">E-commerce Solutions</h3>
               </div>
@@ -504,28 +504,28 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Custom Development</h4>
                     <p className="text-gray-300">Tailored solutions for your unique business needs</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Payment Integration</h4>
                     <p className="text-gray-300">Secure and seamless payment processing</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Inventory Management</h4>
                     <p className="text-gray-300">Efficient stock control and order processing</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Analytics & Insights</h4>
                     <p className="text-gray-300">Data-driven decisions for growth</p>
@@ -670,7 +670,7 @@ className="text-xl text-gray-300 max-w-3xl mx-auto"
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+                className="bg-red-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition-colors"
               >
                 Contact Us Today
               </motion.button>
