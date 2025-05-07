@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ShoppingCart, TrendingUp, Globe, Code, Lightbulb, Users, Target, Heart, Eye, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Banner from '../components/Banner';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
@@ -54,30 +55,30 @@ const Home = () => {
   };
 
   return (
-    <div>
-
-<motion.h2 className="text-4xl font-bold text-gray-900 mb-4 text-center mb-16 pt-10">
+    <div className="bg-black">
+      <Banner />
+      <motion.h2 className="text-4xl font-bold text-white mb-4 text-center mb-16 pt-10">
             Who We Are
           </motion.h2>
           <motion.p
-className="text-xl text-gray-600 max-w-3xl mx-auto"
+className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
             We are a team of digital experts specializing in e-commerce development and digital marketing. Our mission is to help businesses thrive in the digital landscape by creating innovative solutions that drive growth and success.
           </motion.p>
 
-      <section ref={servicesRef} className="py-20 bg-white">
+      <section ref={servicesRef} className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div
               whileHover={{ y: -10 }}
-              className="bg-gray-50 p-8 rounded-lg shadow-lg text-center border border-gray-200"
+              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <ShoppingCart className="h-12 w-12 text-black mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-black">
+              <ShoppingCart className="h-12 w-12 text-white mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4 text-white">
                 E-commerce Mastery
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Build and optimize your online store for seamless customer
                 experiences and increased conversions.
               </p>
@@ -85,13 +86,13 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
 
             <motion.div
               whileHover={{ y: -10 }}
-              className="bg-gray-50 p-8 rounded-lg shadow-lg text-center border border-gray-200"
+              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <TrendingUp className="h-12 w-12 text-black mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-black">
+              <TrendingUp className="h-12 w-12 text-white mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4 text-white">
                 Data-Driven Marketing
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Reach your target audience with strategic campaigns that deliver
                 measurable results and growth.
               </p>
@@ -99,26 +100,26 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
 
             <motion.div
               whileHover={{ y: -10 }}
-              className="bg-gray-50 p-8 rounded-lg shadow-lg text-center border border-gray-200"
+              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <Globe className="h-12 w-12 text-black mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-black">
+              <Globe className="h-12 w-12 text-white mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4 text-white">
                 Modern Web Solutions
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Create responsive, high-performance websites that reflect your
                 brand and engage your customers.
               </p>
             </motion.div>
             <motion.div
               whileHover={{ y: -10 }}
-              className="bg-gray-50 p-8 rounded-lg shadow-lg text-center border border-gray-200"
+              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <Code className="h-12 w-12 text-black mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-black">
+              <Code className="h-12 w-12 text-white mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4 text-white">
                 Custom Development
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Tailored software and application development to meet your
                 unique business needs.
               </p>
@@ -126,13 +127,13 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
 
             <motion.div
               whileHover={{ y: -10 }}
-              className="bg-gray-50 p-8 rounded-lg shadow-lg text-center border border-gray-200"
+              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <Lightbulb className="h-12 w-12 text-black mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-black">
+              <Lightbulb className="h-12 w-12 text-white mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4 text-white">
                 Innovative Strategies
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Creative solutions and forward-thinking strategies to keep you
                 ahead of the competition.
               </p>
@@ -140,13 +141,13 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
 
             <motion.div
               whileHover={{ y: -10 }}
-              className="bg-gray-50 p-8 rounded-lg shadow-lg text-center border border-gray-200"
+              className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
             >
-              <Users className="h-12 w-12 text-black mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4 text-black">
+              <Users className="h-12 w-12 text-white mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4 text-white">
                 User Experience Design
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Focus on user-centered design to create intuitive and engaging
                 digital experiences.
               </p>
@@ -155,7 +156,7 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -167,7 +168,7 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl font-bold text-black mb-4"
+              className="text-3xl font-bold text-white mb-4"
             >
               Our Core Principles
             </motion.h2>
@@ -175,7 +176,7 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-gray-600 max-w-3xl mx-auto"
+              className="text-gray-300 max-w-3xl mx-auto"
             >
               Guiding our journey towards excellence and innovation in digital solutions
             </motion.p>
@@ -189,15 +190,15 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
               transition={{ duration: 0.5 }}
               whileHover={{ 
                 scale: 1.02,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
+                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2)"
               }}
-              className="bg-white p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
+              className="bg-black p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               <div className="absolute bottom-0 right-0 w-full h-1 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
               <Heart className="w-12 h-12 text-blue-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">Our Values</h3>
-              <ul className="space-y-3 text-gray-600">
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-600 transition-colors duration-300">Our Values</h3>
+              <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
                   <span className="text-blue-600 mr-2">•</span>
                   Innovation and creativity in every solution
@@ -224,18 +225,18 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
               transition={{ duration: 0.5, delay: 0.2 }}
               whileHover={{ 
                 scale: 1.02,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
+                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2)"
               }}
-              className="bg-white p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
+              className="bg-black p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               <div className="absolute bottom-0 right-0 w-full h-1 bg-green-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
               <Target className="w-12 h-12 text-green-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300">Our Mission</h3>
-              <p className="text-gray-600 mb-4 group-hover:translate-y-1 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-600 transition-colors duration-300">Our Mission</h3>
+              <p className="text-gray-300 mb-4 group-hover:translate-y-1 transition-transform duration-300">
                 To empower businesses with cutting-edge digital solutions that drive growth and success in the e-commerce landscape.
               </p>
-              <ul className="space-y-3 text-gray-600">
+              <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
                   <span className="text-green-600 mr-2">•</span>
                   Transform digital presence into business success
@@ -258,18 +259,18 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
               transition={{ duration: 0.5, delay: 0.4 }}
               whileHover={{ 
                 scale: 1.02,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
+                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2)"
               }}
-              className="bg-white p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
+              className="bg-black p-8 rounded-xl shadow-lg relative overflow-hidden group cursor-pointer"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               <div className="absolute bottom-0 right-0 w-full h-1 bg-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
               <Eye className="w-12 h-12 text-purple-600 mb-6 transform group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors duration-300">Our Vision</h3>
-              <p className="text-gray-600 mb-4 group-hover:translate-y-1 transition-transform duration-300">
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-purple-600 transition-colors duration-300">Our Vision</h3>
+              <p className="text-gray-300 mb-4 group-hover:translate-y-1 transition-transform duration-300">
                 To be the leading digital transformation partner, recognized for our innovative solutions and exceptional service in the e-commerce and digital marketing space.
               </p>
-              <ul className="space-y-3 text-gray-600">
+              <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
                   <span className="text-purple-600 mr-2">•</span>
                   Pioneer in digital innovation
@@ -321,7 +322,7 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="bg-white p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
+                className="bg-black p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
@@ -329,21 +330,21 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                       <Users className="w-6 h-6 text-blue-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900">Expert Team</h3>
+                    <h3 className="text-2xl font-bold text-white">Expert Team</h3>
                   </div>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-300 mb-6">
                     Our team of certified professionals brings years of experience in e-commerce and digital marketing.
                   </p>
                   <ul className="space-y-3">
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
                       Certified professionals
                     </li>
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
                       Industry expertise
                     </li>
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
                       Continuous training
                     </li>
@@ -356,7 +357,7 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-white p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
+                className="bg-black p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
@@ -364,21 +365,21 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
                       <Lightbulb className="w-6 h-6 text-green-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900">Innovative Solutions</h3>
+                    <h3 className="text-2xl font-bold text-white">Innovative Solutions</h3>
                   </div>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-300 mb-6">
                     We stay ahead of industry trends to deliver cutting-edge solutions that give you a competitive edge.
                   </p>
                   <ul className="space-y-3">
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
                       Latest technologies
                     </li>
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
                       Creative approaches
                     </li>
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
                       Future-proof solutions
                     </li>
@@ -394,7 +395,7 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="bg-white p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
+                className="bg-black p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
@@ -402,21 +403,21 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
                       <Clock className="w-6 h-6 text-purple-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900">24/7 Support</h3>
+                    <h3 className="text-2xl font-bold text-white">24/7 Support</h3>
                   </div>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-300 mb-6">
                     Our dedicated support team is always ready to help you succeed in your digital journey.
                   </p>
                   <ul className="space-y-3">
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
                       Round-the-clock assistance
                     </li>
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
                       Quick response times
                     </li>
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
                       Dedicated account managers
                     </li>
@@ -429,7 +430,7 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="bg-white p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
+                className="bg-black p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
@@ -437,21 +438,21 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                     <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
                       <TrendingUp className="w-6 h-6 text-orange-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900">Proven Results</h3>
+                    <h3 className="text-2xl font-bold text-white">Proven Results</h3>
                   </div>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-300 mb-6">
                     We deliver measurable results and ROI for our clients through data-driven strategies.
                   </p>
                   <ul className="space-y-3">
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
                       Data-driven approach
                     </li>
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
                       Measurable ROI
                     </li>
-                    <li className="flex items-center text-gray-600">
+                    <li className="flex items-center text-gray-300">
                       <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
                       Success metrics
                     </li>
@@ -463,11 +464,11 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-black to-gray-900 relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100 rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 translate-y-1/2" />
+          <div className="absolute top-0 left-0 w-96 h-96 bg-blue-900 rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-900 rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 translate-y-1/2" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -477,8 +478,8 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">What We Offer</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-4">What We Offer</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Comprehensive digital solutions to transform your business and drive growth
             </p>
           </motion.div>
@@ -493,41 +494,41 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                  <ShoppingCart className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                  <ShoppingCart className="w-6 h-6 text-blue-400" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900">E-commerce Solutions</h3>
+                <h3 className="text-3xl font-bold text-white">E-commerce Solutions</h3>
               </div>
-              <p className="text-gray-600 mb-6 text-lg">
+              <p className="text-gray-300 mb-6 text-lg">
                 Custom online stores with seamless shopping experiences and secure payment gateways. We build platforms that convert visitors into customers.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Custom Development</h4>
-                    <p className="text-gray-600">Tailored solutions for your unique business needs</p>
+                    <h4 className="font-semibold text-white">Custom Development</h4>
+                    <p className="text-gray-300">Tailored solutions for your unique business needs</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Payment Integration</h4>
-                    <p className="text-gray-600">Secure and seamless payment processing</p>
+                    <h4 className="font-semibold text-white">Payment Integration</h4>
+                    <p className="text-gray-300">Secure and seamless payment processing</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Inventory Management</h4>
-                    <p className="text-gray-600">Efficient stock control and order processing</p>
+                    <h4 className="font-semibold text-white">Inventory Management</h4>
+                    <p className="text-gray-300">Efficient stock control and order processing</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Analytics & Insights</h4>
-                    <p className="text-gray-600">Data-driven decisions for growth</p>
+                    <h4 className="font-semibold text-white">Analytics & Insights</h4>
+                    <p className="text-gray-300">Data-driven decisions for growth</p>
                   </div>
                 </div>
               </div>
@@ -554,38 +555,38 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
                   <TrendingUp className="w-6 h-6 text-green-600" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900">Digital Marketing</h3>
+                <h3 className="text-3xl font-bold text-white">Digital Marketing</h3>
               </div>
-              <p className="text-gray-600 mb-6 text-lg">
+              <p className="text-gray-300 mb-6 text-lg">
                 Strategic marketing campaigns to increase visibility and drive conversions. We help you reach and engage your target audience effectively.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">SEO Optimization</h4>
-                    <p className="text-gray-600">Improve your search engine rankings</p>
+                    <h4 className="font-semibold text-white">SEO Optimization</h4>
+                    <p className="text-gray-300">Improve your search engine rankings</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Social Media</h4>
-                    <p className="text-gray-600">Engage with your audience effectively</p>
+                    <h4 className="font-semibold text-white">Social Media</h4>
+                    <p className="text-gray-300">Engage with your audience effectively</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Content Strategy</h4>
-                    <p className="text-gray-600">Create compelling content that converts</p>
+                    <h4 className="font-semibold text-white">Content Strategy</h4>
+                    <p className="text-gray-300">Create compelling content that converts</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Analytics & Reporting</h4>
-                    <p className="text-gray-600">Track and optimize your campaigns</p>
+                    <h4 className="font-semibold text-white">Analytics & Reporting</h4>
+                    <p className="text-gray-300">Track and optimize your campaigns</p>
                   </div>
                 </div>
               </div>
@@ -612,38 +613,38 @@ className="text-xl text-gray-600 max-w-3xl mx-auto"
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
                   <Code className="w-6 h-6 text-purple-600" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900">Web Development</h3>
+                <h3 className="text-3xl font-bold text-white">Web Development</h3>
               </div>
-              <p className="text-gray-600 mb-6 text-lg">
+              <p className="text-gray-300 mb-6 text-lg">
                 Modern, responsive websites built with the latest technologies and best practices. We create digital experiences that engage and convert.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Custom Development</h4>
-                    <p className="text-gray-600">Tailored to your specific needs</p>
+                    <h4 className="font-semibold text-white">Custom Development</h4>
+                    <p className="text-gray-300">Tailored to your specific needs</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Responsive Design</h4>
-                    <p className="text-gray-600">Perfect on all devices</p>
+                    <h4 className="font-semibold text-white">Responsive Design</h4>
+                    <p className="text-gray-300">Perfect on all devices</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Performance</h4>
-                    <p className="text-gray-600">Lightning-fast loading times</p>
+                    <h4 className="font-semibold text-white">Performance</h4>
+                    <p className="text-gray-300">Lightning-fast loading times</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></span>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Security</h4>
-                    <p className="text-gray-600">Enterprise-grade protection</p>
+                    <h4 className="font-semibold text-white">Security</h4>
+                    <p className="text-gray-300">Enterprise-grade protection</p>
                   </div>
                 </div>
               </div>
