@@ -13,6 +13,8 @@ import ServiceCard from '../components/service/ServiceCards/ServiceCard';
 import BannerSection from '../components/service/BannerSection/BannerSection';
 import WhyChooseUs from '../components/service/WhychooseUs/WhyChooseUs';
 import FAQSection from '../components/service/FAQSection/FAQSection';
+import CTASection from '../components/service/CTASection/CTASection';
+import ServiceCarousel from '../components/service/ServiceCarousel/ServiceCarousel';
 
 const Services = () => {
   const services = [
@@ -56,6 +58,7 @@ const Services = () => {
 
   return (
     <>
+    <div className='servicepage-section'>
       <BannerSection />
 
       <div className="bg-gray-900 py-20">
@@ -88,7 +91,10 @@ const Services = () => {
       </div>
 
       <WhyChooseUs />
+      <ServiceCarousel />
       <FAQSection />
+      <CTASection />
+      </div>
     </>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import {
   ShieldCheck,
   Clock,
@@ -54,9 +55,11 @@ const WhyChooseUs = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-gray-800 rounded-2xl p-6 text-left hover:bg-gray-700 transition shadow-md"
+              className="bg-gray-800 rounded-2xl p-6 text-left shadow-md"
+              whileHover={{ y: -8, scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 300 }}
             >
               <div className="mb-4">
                 {feature.icon}
@@ -65,7 +68,7 @@ const WhyChooseUs = () => {
                 {feature.title}
               </h3>
               <p className="text-gray-400 text-sm">{feature.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
