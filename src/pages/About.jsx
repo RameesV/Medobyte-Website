@@ -82,27 +82,27 @@ const About = () => {
             </div>
           </div>
           {/* Top Right Card */}
-          <div className="relative rounded-2xl bg-[#FF3333] text-white p-8 flex flex-col justify-between min-h-[200px]">
+          <div className="group relative rounded-2xl bg-red-500 text-white p-8 flex flex-col justify-between min-h-[200px] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <div>
               <span className="font-semibold uppercase text-sm tracking-wider">Our Mission</span>
               <h3 className="text-2xl font-bold mt-2 mb-2">Managed IT Mastery: Enhancing Operations with Expert Support</h3>
               <p>Our mission is to develop Websites and Software that are most reliable and cost-efficient in a timely manner and to provide customized services which suit all your designing and developing needs.</p>
             </div>
             <div className="absolute top-4 right-4">
-              <div className="bg-black/30 rounded-full p-2">
+              <div className="bg-black/30 rounded-full p-2 group-hover:scale-110 transition-transform duration-300">
                 <svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6 text-white' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M7 17L17 7M7 7h10v10' /></svg>
               </div>
             </div>
           </div>
           {/* Bottom Right Card */}
-          <div className="relative rounded-2xl bg-gray-900 text-white p-8 flex flex-col justify-between min-h-[200px]">
+          <div className="group relative rounded-2xl bg-gray-900 text-white p-8 flex flex-col justify-between min-h-[200px] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <div>
               <span className="font-semibold uppercase text-sm tracking-wider">Our Vision</span>
               <h3 className="text-2xl font-bold mt-2 mb-2">Crafting Tomorrow's Solutions: Medobyte Web Development Insights</h3>
               <p>Our passion for what we do led us here. Our vision is to provide the world with the best IT consulting and software development services while taking care of our people and honoring our values.</p>
             </div>
             <div className="absolute top-4 right-4">
-              <div className="bg-[#FF3333] rounded-full p-2">
+              <div className="bg-red-500 rounded-full p-2 group-hover:scale-110 transition-transform duration-300">
                 <svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6 text-white' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M7 17L17 7M7 7h10v10' /></svg>
               </div>
             </div>
