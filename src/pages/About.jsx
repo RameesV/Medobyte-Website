@@ -27,7 +27,7 @@ const About = () => {
         className="w-full"
       >
         <div 
-          className="relative shadow-xl px-8 py-20 w-full border-l-4 border-blue-500 text-center overflow-hidden min-h-[500px] flex items-center justify-center"
+          className="relative shadow-xl px-8 py-20 w-full text-center overflow-hidden min-h-[500px] flex items-center justify-center"
           style={{
             backgroundImage: `url('${images[currentImage]}')`,
             backgroundSize: 'cover',
