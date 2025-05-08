@@ -72,7 +72,8 @@ const ServiceCarousel = () => {
           ))}
         </Swiper>
 
-        <style jsx>{`
+        {/* Removed jsx attribute from <style> */}
+        <style>{`
           .swiper-pagination {
             display: flex;
             justify-content: center;
