@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import bannerImage from '../../../assets/images/servicepagebannerimage.jpg';
 
 const BannerSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -79,7 +78,7 @@ const BannerSection = () => {
     <div
       className="relative mt-16 bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(${bannerImage})`,
+        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('/images/servicepagebannerimage.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
