@@ -75,7 +75,7 @@ const Home = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="text-base text-gray-300 px-6 mx-auto text-justify"
+        className="text-base text-gray-300 px-8 mx-auto text-center"
       >
 At MedoByte, we specialize in professional website development, eCommerce solutions, and digital marketing services designed to elevate your online presence and drive measurable results. Whether you're looking to build a high-performance website, launch a feature-rich online store, or boost your brand visibility through targeted SEO, PPC, and social media marketing, our expert team delivers customized strategies that align with your business goals. With a focus on responsive design, seamless user experience, and data-driven digital campaigns, we empower businesses to thrive in the competitive digital landscape. Let MedoByte be your trusted partner in transforming your online success.      </motion.p>
 
@@ -96,7 +96,12 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.7, delay: 0.15 * idx, type: 'spring', stiffness: 300, damping: 20 }}
-                className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
+                whileHover={{
+                  backgroundColor: "rgb(31 41 55 / var(--tw-bg-opacity))",
+                  scale: 1.05,
+                  transition: { duration: 0.2 }
+                }}
+                className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800 cursor-pointer"
               >
                 {icon}
                 <h3 className="text-xl font-semibold mb-4 text-white">
