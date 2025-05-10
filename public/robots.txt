@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.medobyte.com/sitemap.xml
