@@ -9,7 +9,9 @@ const About = () => {
     "https://img.freepik.com/free-photo/beautiful-office-space-cartoon-style_23-2151043333.jpg?t=st=1746635350~exp=1746638950~hmac=cca7c4804340b7683c7958d51b81f8edd43b403f8d04c5abf7a1fa12f5fd5e99&w=1380",
     "https://img.freepik.com/free-photo/rendering-anime-doctors-work_23-2151151905.jpg?t=st=1746635507~exp=1746639107~hmac=1905d9a0d82bed744f74590e14c54de5b72192ba5cbe5ef00d63bab088c9c981&w=1480"
   ];
-
+ useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
