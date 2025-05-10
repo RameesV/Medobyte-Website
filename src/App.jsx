@@ -6,9 +6,11 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
   return (
+    <HelmetProvider>
     <Router>
       <div className="min-h-screen flex flex-col">
         <Navbar />
@@ -23,6 +25,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </HelmetProvider>
   );
 }
 
