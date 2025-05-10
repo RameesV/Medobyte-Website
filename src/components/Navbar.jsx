@@ -22,11 +22,11 @@ const Navbar = () => {
             <Link to="/" className="text-white hover:text-red-600 transition-colors">
               Home
             </Link>
-            <Link to="/services" className="text-white hover:text-red-600 transition-colors">
-              Services
-            </Link>
             <Link to="/about" className="text-white hover:text-red-600 transition-colors">
               About Us
+            </Link>
+            <Link to="/services" className="text-white hover:text-red-600 transition-colors">
+              Services
             </Link>
             <Link to="/contact" className="text-white hover:text-red-600 transition-colors">
               Contact Us
