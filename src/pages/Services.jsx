@@ -15,6 +15,8 @@ import WhyChooseUs from '../components/service/WhychooseUs/WhyChooseUs';
 import FAQSection from '../components/service/FAQSection/FAQSection';
 import CTASection from '../components/service/CTASection/CTASection';
 import ServiceCarousel from '../components/service/ServiceCarousel/ServiceCarousel';
+import SEOMetaTags from '../components/utils/seo/SEOMetaTags';
+import StructuredData from '../components/utils/seo/StructuredData';
 
 const Services = () => {
   useEffect(() => {
@@ -60,8 +62,56 @@ const Services = () => {
     }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MedoByte",
+    "url": "https://www.medobyte.com",
+    "logo": "https://www.medobyte.com/images/MB-Black-Logo.png",
+    "description": "Professional web development and digital marketing services",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No:2/3 Ekrajpura",
+      "addressLocality": "Hoskote",
+      "addressRegion": "Bangalore",
+      "postalCode": "562114",
+      "addressCountry": "IN"
+    },
+    // Add service-specific structured data
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digital Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "E-commerce Solutions",
+            "description": "Custom online stores, payment integration, and inventory management systems"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Marketing",
+            "description": "Comprehensive digital marketing strategies to grow your online presence"
+          }
+        }
+        // Add more services as needed
+      ]
+    }
+  };
+
   return (
     <>
+      <SEOMetaTags 
+        title="MedoByte - Professional Web Development & Digital Marketing Services"
+        description="MedoByte provides custom website development, e-commerce solutions, and digital marketing services to help businesses thrive online. Get expert web solutions today."
+        keywords="web development, digital marketing, e-commerce solutions, SEO services, website design"
+        canonicalUrl="https://www.medobyte.com"
+      />
+      <StructuredData data={structuredData} />
       <div className='servicepage-section overflow-x-hidden'>
         <BannerSection />
 
