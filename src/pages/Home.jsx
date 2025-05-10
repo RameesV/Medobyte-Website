@@ -11,6 +11,10 @@ const Home = () => {
   const servicesRef = useRef(null);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
+  
+  useEffect(() => {
     let charIndex = 0;
     const typingInterval = setInterval(() => {
       if (charIndex < fullText.length) {
@@ -71,10 +75,9 @@ const Home = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="text-xl text-gray-300 max-w-3xl mx-auto"
+        className="text-xl text-gray-300 px-6 mx-auto text-justify"
       >
-        We are a team of digital experts specializing in e-commerce development and digital marketing. Our mission is to help businesses thrive in the digital landscape by creating innovative solutions that drive growth and success.
-      </motion.p>
+At MedoByte, we specialize in professional website development, eCommerce solutions, and digital marketing services designed to elevate your online presence and drive measurable results. Whether you're looking to build a high-performance website, launch a feature-rich online store, or boost your brand visibility through targeted SEO, PPC, and social media marketing, our expert team delivers customized strategies that align with your business goals. With a focus on responsive design, seamless user experience, and data-driven digital campaigns, we empower businesses to thrive in the competitive digital landscape. Let MedoByte be your trusted partner in transforming your online success.      </motion.p>
 
       <section ref={servicesRef} className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -104,7 +107,7 @@ const Home = () => {
                 <h3 className="text-xl font-semibold mb-4 text-white">
                   {[
                     'E-commerce Mastery',
-                    'Data-Driven Marketing',
+                    'Digital Marketing',
                     'Modern Web Solutions',
                     'Custom Development',
                     'Innovative Strategies',
@@ -129,7 +132,7 @@ const Home = () => {
 
       <section className="pt-0 pb-12 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">Our Core Principles</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">Our Guiding Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Value Card */}
             <motion.div
@@ -143,8 +146,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-black/70 z-0" />
               <div className="relative z-10">
                 <span className="text-sm font-semibold text-red-500 mb-2">OUR VALUE</span>
-                <h3 className="text-xl font-semibold mb-4 text-white">Your Digital Future, Our Expertise: Medobyte Delivers Excellence.</h3>
-                <p className="text-gray-300 text-lg mb-6">Our team of professional web designers, developers, and digital marketers bring their skills above and beyond the ordinary to each and every project to make your dream come true.</p>
+                <p className="text-gray-300 text-lg mb-6">At MedoByte, our core value lies in delivering innovative, reliable, and client-focused digital solutions that drive real growth. We are committed to building long-term partnerships by understanding our clients’ unique needs and providing transparent, high-quality service across web development, eCommerce, and digital marketing. Your success is our mission.</p>
               </div>
             </motion.div>
             <div className="flex flex-col gap-8">
@@ -157,8 +159,7 @@ const Home = () => {
                 className="relative rounded-2xl bg-red-600 p-8 flex-1 flex flex-col justify-between shadow-lg"
               >
                 <span className="text-sm font-semibold text-white mb-2">OUR MISSION</span>
-                <h3 className="text-xl font-semibold mb-4 text-white">Managed IT Mastery: Enhancing Operations with Expert Support</h3>
-                <p className="text-gray-300 text-lg">Our mission is to develop Websites and Software that is most reliable and cost-efficient in a timely manner and to provide customized services which suit all your designing and developing needs.</p>
+                <p className="text-gray-300 text-lg">To deliver exceptional web development, eCommerce, and digital marketing services by combining innovation, technology, and strategy—helping our clients achieve measurable success and stand out in the digital marketplace.</p>
               </motion.div>
               {/* Vision Card */}
               <motion.div
@@ -169,8 +170,7 @@ const Home = () => {
                 className="relative rounded-2xl bg-gray-900 p-8 flex-1 flex flex-col justify-between shadow-lg"
               >
                 <span className="text-sm font-semibold text-white mb-2">OUR VISION</span>
-                <h3 className="text-xl font-semibold mb-4 text-white">Crafting Tomorrow's Solutions: Medobyte Web Development Insights</h3>
-                <p className="text-gray-300 text-lg">Our passion for what we do led us here. Our vision is to provide the world with the best IT consulting and software development services while taking care of our people and honoring our values.</p>
+                <p className="text-gray-300 text-lg">To empower businesses of all sizes with cutting-edge digital solutions that enhance online presence, drive sustainable growth, and foster lasting customer engagement in an ever-evolving digital world.</p>
               </motion.div>
             </div>
           </div>
@@ -194,8 +194,8 @@ const Home = () => {
               className="text-center px-4"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Why Choose Us</h2>
-              <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-                We combine expertise, innovation, and dedication to deliver exceptional results for your business
+              <p className="text-base text-gray-200 max-w-3xl mx-auto">
+                At Medobyte Technologies, we're passionate about empowering businesses through innovative e-commerce solutions and digital marketing strategies. Our team of experts combines creativity with technology to deliver tailored solutions that drive results. We prioritize transparency, collaboration, and customer satisfaction, ensuring seamless communication and measurable success. With a proven track record of boosting online sales, enhancing brand visibility, and fostering long-term growth, we help businesses thrive in the digital landscape. Whether you're looking to launch an e-commerce platform or amplify your online presence, choose us for expert guidance, innovative solutions, and unparalleled support
               </p>
             </motion.div>
           </div>
@@ -297,15 +297,15 @@ const Home = () => {
                     Our dedicated support team is always ready to help you succeed in your digital journey.
                   </p>
                   <ul className="space-y-3">
-                    <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
+                    <li className="flex items-start transition-transform duration-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
                       <span className="text-white">Round-the-clock assistance</span>
                     </li>
-                    <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
+                    <li className="flex items-start  transition-transform duration-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
                       <span className="text-white">Quick response times</span>
                     </li>
-                    <li className="flex items-start group-hover:translate-x-2 transition-transform duration-300">
+                    <li className="flex items-start  transition-transform duration-300">
                       <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
                       <span className="text-white">Dedicated account managers</span>
                     </li>

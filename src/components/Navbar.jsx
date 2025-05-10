@@ -11,10 +11,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-              <Monitor className="h-8 w-8 text-white" />
-              <span className="text-xl font-bold text-white">MEDOBYTE</span>
-            </Link>
+           <Link to="/" className="flex items-center space-x-2">
+              <img className='w-[50px]' src="/images/MB-White-Logo.png" alt="" />
+            </Link> 
+            
           </div>
 
           {/* Desktop Menu */}
@@ -26,10 +26,10 @@ const Navbar = () => {
               Services
             </Link>
             <Link to="/about" className="text-white hover:text-red-600 transition-colors">
-              About
+              About Us
             </Link>
             <Link to="/contact" className="text-white hover:text-red-600 transition-colors">
-              Contact
+              Contact Us
             </Link>
           </div>
 

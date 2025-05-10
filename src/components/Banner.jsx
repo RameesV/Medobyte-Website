@@ -6,16 +6,13 @@ const Banner = () => {
   
   const contents = [
     {
-      number: "24/7",
-      text: "Round-the-clock support for your digital needs"
+      text: "Custom Website Development"
     },
     {
-      number: "100%",
-      text: "Satisfaction guaranteed on all our services"
+      text: "Scalable eCommerce Solutions"
     },
     {
-      number: "500+",
-      text: "Successful projects delivered worldwide"
+      text: "Results-Driven Digital Marketing"
     }
   ];
 
@@ -51,8 +48,7 @@ const Banner = () => {
               transition={{ duration: 0.5 }}
               className="text-center p-4 text-white"
             >
-              <div className="text-4xl font-bold mb-2">{contents[currentIndex].number}</div>
-              <div className="text-lg text-gray-300">{contents[currentIndex].text}</div>
+              <div className="text-4xl font-bold mb-2">{contents[currentIndex].text}</div>
             </motion.div>
           </AnimatePresence>
         </div>
