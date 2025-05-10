@@ -22,7 +22,7 @@ const CTASection = () => {
           viewport={{ once: true }}
           className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto"
         >
-          Let’s collaborate to create impactful, results-driven digital experiences. Get in touch today and start building your future with us.
+          We turn your vision into reality with expert website development, powerful eCommerce solutions, and strategic digital marketing. Get in touch today for a free consultation and take the first step toward digital success!
         </motion.p>
         <motion.div
           whileHover={{ scale: 1.05 }}

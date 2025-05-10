@@ -13,32 +13,32 @@ const features = [
   {
     icon: <ShieldCheck className="w-8 h-8 text-red-600" />,
     title: "Reliable & Secure",
-    description: "We deliver secure, scalable solutions with modern technologies."
+    description: "We prioritize the reliability and security of every digital solution we deliver. From stable website performance to secure data handling and compliance with best practices, our team ensures your online presence is protected and consistently available—giving you and your customers peace of mind."
   },
   {
     icon: <Clock className="w-8 h-8 text-red-600" />,
     title: "24/7 Support",
-    description: "Our team is available anytime you need help or guidance."
+    description: "We round-the-clock support to ensure your website and digital solutions are always running smoothly. Our team is available at any time to address any issues, provide assistance, and keep your business online without interruption."
   },
   {
     icon: <Code className="w-8 h-8 text-red-600" />,
     title: "Full-Stack Expertise",
-    description: "From front-end to DevOps, we cover your entire tech stack."
+    description: "Our full-stack expertise allows us to handle every aspect of your web development needs, from front-end design to back-end functionality. Whether it’s building dynamic websites, scalable eCommerce platforms, or complex web applications, our team of developers ensures seamless integration and high-performance solutions that drive results."
   },
   {
     icon: <Users className="w-8 h-8 text-red-600" />,
     title: "Client-Focused",
-    description: "Every project is built to align with your unique goals."
+    description: "We put our clients at the heart of everything we do. We take the time to understand your unique business goals and challenges, delivering tailored digital solutions that align with your vision. Our collaborative approach ensures that you are always informed, involved, and satisfied with the results, fostering long-term partnerships built on trust and success."
   },
   {
     icon: <TrendingUp className="w-8 h-8 text-red-600" />,
     title: "Results-Driven",
-    description: "500+ successful projects for businesses across industries."
+    description: "We focus on delivering tangible, measurable results for your business. From improving online visibility through SEO to optimizing your website’s performance, every solution is designed with one goal in mind—driving growth and achieving success. We use data-driven strategies to ensure that each project delivers the impact and ROI you expect."
   },
   {
     icon: <PhoneCall className="w-8 h-8 text-red-600" />,
     title: "Transparent Communication",
-    description: "We ensure you're informed and in control throughout the project."
+    description: "We believe in clear, honest, and open communication throughout every phase of your project. From initial consultation to project delivery and beyond, we ensure you're always informed about progress, timelines, and any challenges that may arise. Our goal is to build trust and foster a collaborative relationship, keeping you in the loop every step of the way."
   },
 ];
 
@@ -46,12 +46,9 @@ const WhyChooseUs = () => {
   return (
     <section className="bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 text-white">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-10 p-4">
           Why Choose Us
         </h2>
-        <p className="text-gray-300 max-w-2xl mx-auto mb-12">
-          We combine technical excellence with customer-centric values to deliver digital solutions that drive business growth.
-        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (

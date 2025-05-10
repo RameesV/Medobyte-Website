@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
   ShoppingCart,
@@ -17,6 +17,10 @@ import CTASection from '../components/service/CTASection/CTASection';
 import ServiceCarousel from '../components/service/ServiceCarousel/ServiceCarousel';
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
+
   const services = [
     {
       icon: <ShoppingCart className="h-12 w-12 text-red-600" />,
@@ -58,42 +62,42 @@ const Services = () => {
 
   return (
     <>
-    <div className='servicepage-section overflow-x-hidden'>
-      <BannerSection />
+      <div className='servicepage-section overflow-x-hidden'>
+        <BannerSection />
 
-      <div className="bg-gray-900 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h1 className="text-4xl font-extrabold mb-4">Our Services</h1>
-            <p className="text-xl text-gray-300">
-              Comprehensive digital solutions to help your business thrive online
-            </p>
-          </motion.div>
+        <div className="bg-gray-900 py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center mb-16"
+            >
+              <h1 className="text-4xl font-extrabold mb-4">Our Services</h1>
+              <p className="text-xl text-gray-300">
+                Comprehensive digital solutions to help your business thrive online
+              </p>
+            </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                icon={service.icon}
-                title={service.title}
-                description={service.description}
-                features={service.features}
-                index={index}
-              />
-            ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  icon={service.icon}
+                  title={service.title}
+                  description={service.description}
+                  features={service.features}
+                  index={index}
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      <WhyChooseUs />
-      <ServiceCarousel />
-      <FAQSection />
-      <CTASection />
+        <WhyChooseUs />
+        <ServiceCarousel />
+        <FAQSection />
+        <CTASection />
       </div>
     </>
   );
