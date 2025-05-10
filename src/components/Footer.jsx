@@ -8,9 +8,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <img className='w-[50px]' src="../public/images/MB-White-Logo.png" alt="" />
-            <p className="text-gray-400">
-              Transforming businesses through innovative e-commerce solutions and digital marketing strategies.
-            </p>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
