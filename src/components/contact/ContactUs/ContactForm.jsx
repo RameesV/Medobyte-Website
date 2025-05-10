@@ -6,22 +6,44 @@ const ContactForm = () => {
     <div className="bg-gray-900 text-white px-6 py-16 md:px-20 rounded-2xl shadow-xl">
       <div className="grid md:grid-cols-2 gap-12">
         {/* Contact Info */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-6">
           <div className="bg-gray-800 p-6 rounded-xl shadow-md break-words">
             <h3 className="text-lg font-semibold mb-2 text-white">Head Office</h3>
             <p className="text-gray-400 text-sm">
               No:2/3 Ekrajpura Hoskote Banglore 562114
             </p>
           </div>
+
           <div className="bg-red-600 p-6 rounded-xl text-white shadow-md break-words">
             <h3 className="text-lg font-semibold mb-2">Email Support</h3>
             <p className="text-sm break-words">contact@medobyte.in</p>
           </div>
+
           <div className="bg-gray-800 p-6 rounded-xl shadow-md break-words">
             <h3 className="text-lg font-semibold mb-2">Call Us</h3>
             <p className="text-sm text-gray-400">India: +91 8547864741</p>
           </div>
+
+          {/* Social Links */}
+          <div className="mt-16 text-left">
+            <p className="mb-4 text-gray-400">Follow Our Social Network</p>
+            <div className="flex flex-wrap gap-4 text-white text-xl">
+              <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
         </div>
+
 
         {/* Contact Form */}
         <div>
@@ -42,25 +64,6 @@ const ContactForm = () => {
               SEND MESSAGE
             </button>
           </form>
-        </div>
-      </div>
-
-      {/* Social Links */}
-      <div className="mt-16 text-left">
-        <p className="mb-4 text-gray-400">Follow Our Social Network</p>
-        <div className="flex flex-wrap gap-4 text-white text-xl">
-          <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
-            <Facebook className="w-5 h-5" />
-          </a>
-          <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
-            <Instagram className="w-5 h-5" />
-          </a>
-          <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
-            <Twitter className="w-5 h-5" />
-          </a>
-          <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
-            <Linkedin className="w-5 h-5" />
-          </a>
         </div>
       </div>
     </div>
