@@ -9,7 +9,9 @@ const ServiceCard = ({ icon, title, description, features, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="bg-gray-800 text-white rounded-lg shadow-lg p-8 hover:shadow-xl hover:bg-gray-700 transition-shadow"
     >
-      <div className="mb-6">{icon}</div>
+      <div className="mb-6 text-indigo-400">
+        {React.cloneElement(icon, { className: "w-10 h-10" })}
+      </div>
       <h3 className="text-2xl font-semibold mb-4 text-white">{title}</h3>
       <p className="text-gray-300 mb-6">{description}</p>
       <ul className="space-y-2">
