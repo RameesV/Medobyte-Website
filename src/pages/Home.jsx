@@ -11,6 +11,10 @@ const Home = () => {
   const servicesRef = useRef(null);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
+  
+  useEffect(() => {
     let charIndex = 0;
     const typingInterval = setInterval(() => {
       if (charIndex < fullText.length) {
