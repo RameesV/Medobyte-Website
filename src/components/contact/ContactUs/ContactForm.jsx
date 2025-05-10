@@ -1,5 +1,7 @@
 import React from "react";
-import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import { SiWhatsapp } from 'react-icons/si';
+
 
 const ContactForm = () => {
   return (
@@ -28,16 +30,36 @@ const ContactForm = () => {
           <div className="mt-16 text-left">
             <p className="mb-4 text-gray-400">Follow Our Social Network</p>
             <div className="flex flex-wrap gap-4 text-white text-xl">
-              <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
+              <a
+                href="https://www.facebook.com/share/1BwtX9z58R/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
+              <a
+                href="https://www.instagram.com/medobyte.tech?igsh=MTNlcDR3eHl5MTZhcw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
-                <Twitter className="w-5 h-5" />
+              <a
+                href="https://wa.me/918547864741"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 hover:bg-red-700 transition p-3 rounded-full"
+              >
+                <SiWhatsapp className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full">
+              <a
+                href="https://www.linkedin.com/in/medobyte-technologies?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
