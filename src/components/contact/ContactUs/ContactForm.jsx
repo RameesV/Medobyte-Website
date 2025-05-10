@@ -1,9 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
 
 
 const ContactForm = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <div className="bg-gray-900 text-white px-6 py-16 md:px-20 rounded-2xl shadow-xl">
       <div className="grid md:grid-cols-2 gap-12">
@@ -74,10 +79,9 @@ const ContactForm = () => {
 
         {/* Contact Form */}
         <div>
-          <h2 className="text-red-600 text-sm font-semibold mb-2 tracking-widest">GET IN TOUCH</h2>
-          <h1 className="text-3xl font-extrabold mb-6 leading-tight text-white">
-            Don't hesitate to contact us for more information.
-          </h1>
+          <p className="text-2xl font-extrabold mb-6 leading-tight text-white">
+            Get in touch with Medobyte for innovative digital solutions that drive your business forward.
+          </p>
           <form className="grid gap-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input type="text" placeholder="Name" className="p-3 rounded bg-gray-800 text-white placeholder-gray-500" />
