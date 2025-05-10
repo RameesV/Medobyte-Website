@@ -75,7 +75,7 @@ const Home = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="text-xl text-gray-300 px-6 mx-auto text-justify"
+        className="text-base text-gray-300 px-6 mx-auto text-justify"
       >
 At MedoByte, we specialize in professional website development, eCommerce solutions, and digital marketing services designed to elevate your online presence and drive measurable results. Whether you're looking to build a high-performance website, launch a feature-rich online store, or boost your brand visibility through targeted SEO, PPC, and social media marketing, our expert team delivers customized strategies that align with your business goals. With a focus on responsive design, seamless user experience, and data-driven digital campaigns, we empower businesses to thrive in the competitive digital landscape. Let MedoByte be your trusted partner in transforming your online success.      </motion.p>
 
@@ -140,7 +140,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             >
               <div className="absolute inset-0 bg-black/70 z-0" />
               <div className="relative z-10">
-                <span className="text-sm font-semibold text-red-500 mb-2">OUR VALUE</span>
+                <span className="text-xl font-semibold text-red-500 mb-2">OUR VALUE</span>
                 <p className="text-gray-300 text-lg mb-6">At MedoByte, our core value lies in delivering innovative, reliable, and client-focused digital solutions that drive real growth. We are committed to building long-term partnerships by understanding our clients' unique needs and providing transparent, high-quality service across web development, eCommerce, and digital marketing. Your success is our mission.</p>
               </div>
             </motion.div>
@@ -153,7 +153,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 viewport={{ once: true, amount: 0.3 }}
                 className="relative rounded-2xl bg-red-600 p-8 flex-1 flex flex-col justify-between shadow-lg"
               >
-                <span className="text-sm font-semibold text-white mb-2">OUR MISSION</span>
+                <span className="text-xl font-semibold text-white mb-2">OUR MISSION</span>
                 <p className="text-gray-300 text-lg">To deliver exceptional web development, eCommerce, and digital marketing services by combining innovation, technology, and strategy—helping our clients achieve measurable success and stand out in the digital marketplace.</p>
               </motion.div>
               {/* Vision Card */}
@@ -164,7 +164,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 viewport={{ once: true, amount: 0.3 }}
                 className="relative rounded-2xl bg-gray-900 p-8 flex-1 flex flex-col justify-between shadow-lg"
               >
-                <span className="text-sm font-semibold text-white mb-2">OUR VISION</span>
+                <span className="text-xl font-semibold text-white mb-2">OUR VISION</span>
                 <p className="text-gray-300 text-lg">To empower businesses of all sizes with cutting-edge digital solutions that enhance online presence, drive sustainable growth, and foster lasting customer engagement in an ever-evolving digital world.</p>
               </motion.div>
             </div>
