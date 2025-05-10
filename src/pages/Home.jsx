@@ -96,11 +96,6 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.7, delay: 0.15 * idx, type: 'spring', stiffness: 300, damping: 20 }}
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: '0 8px 32px 0 rgba(220,38,38,0.25)',
-                  borderColor: 'rgb(220 38 38)'
-                }}
                 className="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-800"
               >
                 {icon}
@@ -146,7 +141,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
               <div className="absolute inset-0 bg-black/70 z-0" />
               <div className="relative z-10">
                 <span className="text-sm font-semibold text-red-500 mb-2">OUR VALUE</span>
-                <p className="text-gray-300 text-lg mb-6">At MedoByte, our core value lies in delivering innovative, reliable, and client-focused digital solutions that drive real growth. We are committed to building long-term partnerships by understanding our clients’ unique needs and providing transparent, high-quality service across web development, eCommerce, and digital marketing. Your success is our mission.</p>
+                <p className="text-gray-300 text-lg mb-6">At MedoByte, our core value lies in delivering innovative, reliable, and client-focused digital solutions that drive real growth. We are committed to building long-term partnerships by understanding our clients' unique needs and providing transparent, high-quality service across web development, eCommerce, and digital marketing. Your success is our mission.</p>
               </div>
             </motion.div>
             <div className="flex flex-col gap-8">
@@ -216,7 +211,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 <div className="relative">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
-                      <Users className="w-6 h-6 text-red-600" />
+                      <Users className="w-6 h-6 text-[#818cf8]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Expert Team</h3>
                   </div>
@@ -251,7 +246,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 <div className="relative">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                      <Lightbulb className="w-6 h-6 text-red-600" />
+                      <Lightbulb className="w-6 h-6 text-[#818cf8]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Innovative Solutions</h3>
                   </div>
@@ -260,15 +255,15 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       Latest technologies
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       Creative approaches
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       Future-proof solutions
                     </li>
                   </ul>
@@ -289,7 +284,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 <div className="relative">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                      <Clock className="w-6 h-6 text-red-600" />
+                      <Clock className="w-6 h-6 text-[#818cf8]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">24/7 Support</h3>
                   </div>
@@ -297,16 +292,16 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                     Our dedicated support team is always ready to help you succeed in your digital journey.
                   </p>
                   <ul className="space-y-3">
-                    <li className="flex items-start transition-transform duration-300">
-                      <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                    <li className="flex items-center transition-transform duration-300">
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       <span className="text-white">Round-the-clock assistance</span>
                     </li>
-                    <li className="flex items-start  transition-transform duration-300">
-                      <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                    <li className="flex items-center  transition-transform duration-300">
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       <span className="text-white">Quick response times</span>
                     </li>
-                    <li className="flex items-start  transition-transform duration-300">
-                      <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                    <li className="flex items-center  transition-transform duration-300">
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       <span className="text-white">Dedicated account managers</span>
                     </li>
                   </ul>
@@ -324,7 +319,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 <div className="relative">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
-                      <TrendingUp className="w-6 h-6 text-red-600" />
+                      <TrendingUp className="w-6 h-6 text-[#818cf8]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Proven Results</h3>
                   </div>
@@ -333,15 +328,15 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       Data-driven approach
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       Measurable ROI
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
                       Success metrics
                     </li>
                   </ul>
@@ -383,7 +378,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-red-900 rounded-full flex items-center justify-center mr-4">
-                  <ShoppingCart className="w-6 h-6 text-red-600" />
+                  <ShoppingCart className="w-6 h-6 text-[#818cf8]" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">E-commerce Solutions</h3>
               </div>
@@ -442,7 +437,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                  <TrendingUp className="w-6 h-6 text-red-600" />
+                  <TrendingUp className="w-6 h-6 text-[#818cf8]" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">Digital Marketing</h3>
               </div>
@@ -451,28 +446,28 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">SEO Optimization</h4>
                     <p className="text-gray-300">Improve your search engine rankings</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Social Media</h4>
                     <p className="text-gray-300">Engage with your audience effectively</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Content Strategy</h4>
                     <p className="text-gray-300">Create compelling content that converts</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Analytics & Reporting</h4>
                     <p className="text-gray-300">Track and optimize your campaigns</p>
@@ -501,7 +496,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                  <Code className="w-6 h-6 text-red-600" />
+                  <Code className="w-6 h-6 text-[#818cf8]" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">Web Development</h3>
               </div>
@@ -510,28 +505,28 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Custom Development</h4>
                     <p className="text-gray-300">Tailored to your specific needs</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Responsive Design</h4>
                     <p className="text-gray-300">Perfect on all devices</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Performance</h4>
                     <p className="text-gray-300">Lightning-fast loading times</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Security</h4>
                     <p className="text-gray-300">Enterprise-grade protection</p>
