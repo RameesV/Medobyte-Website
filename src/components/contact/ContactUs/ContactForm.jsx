@@ -18,7 +18,12 @@ const ContactForm = () => {
 
           <div className="bg-red-600 p-6 rounded-xl text-white shadow-md break-words">
             <h3 className="text-lg font-semibold mb-2">Email Support</h3>
-            <p className="text-sm break-words">contact@medobyte.in</p>
+            <a
+              href="mailto:contact@medobyte.com"
+              className="text-sm break-words underline"
+            >
+              contact@medobyte.com
+            </a>
           </div>
 
           <div className="bg-gray-800 p-6 rounded-xl shadow-md break-words">
