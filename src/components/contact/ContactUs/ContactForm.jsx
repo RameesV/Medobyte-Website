@@ -1,69 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 
 const ContactForm = () => {
+  const formRef = useRef(null);
+  const URL =
+    "https://script.google.com/macros/s/AKfycbzq5vytZh-qROidg3_994icuLrlgDTRF1q4NzP4XLlz0Ql-nfuzIHgUNibuIKfADC4g/exec";
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
-  const validateForm = (data) => {
-    const errors = {};
-    
-    if (!data.name.trim()) {
-      errors.name = 'Name is required';
-    }
-    
-    if (!data.email.trim() || !data.email.includes('@')) {
-      errors.email = 'Please enter a valid email';
-    }
-    
-    if (!data.phone.trim() || !/^\d{10}$/.test(data.phone)) {
-      errors.phone = 'Please enter a valid 10-digit phone number';
-    }
-    
-    return errors;
-  };
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const form = e.target;
-    const data = {
-      name: form[0].value,
-      company: form[1].value,
-      phone: form[2].value,
-      email: form[3].value,
-      subject: form[4].value,
-      message: form[5].value,
-    };
-
-    const errors = validateForm(data);
-    if (Object.keys(errors).length > 0) {
-      alert('Please fix the following errors:\n' + 
-            Object.values(errors).join('\n'));
-      return;
-    }
-
-    try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxVSMVId7eldvQ9lrlXs3EF3uc4o-9E30yKLn4YB5Tq-9SHIIAAdZ3gOo7bit6ANIEH/exec', {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-          "Content-Type": "application/json",
-        },
+    fetch(URL, {
+      method: "POST",
+      body: new FormData(formRef.current),
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Something went wrong");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        alert(data.msg || "Form submitted successfully!");
+        formRef.current.reset();
+      })
+      .catch(() => {
+        alert("Submission failed. Please try again.");
       });
-
-      const result = await response.json();
-      if (result.result === 'success') {
-        alert("Message sent successfully!");
-        form.reset();
-      } else {
-        alert("Failed to send message. Please try again later.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred. Please try again later.");
-    }
   };
 
   return (
@@ -80,9 +46,7 @@ const ContactForm = () => {
             </p>
           </div>
           <div className="bg-red-600 p-6 rounded-xl text-white shadow-md break-words">
-            <h3 className="text-lg font-semibold mb-2">
-              Email Support
-            </h3>
+            <h3 className="text-lg font-semibold mb-2">Email Support</h3>
             <a
               href="mailto:contact@medobyte.com"
               className="text-sm break-words underline"
@@ -91,18 +55,12 @@ const ContactForm = () => {
             </a>
           </div>
           <div className="bg-gray-800 p-6 rounded-xl shadow-md break-words">
-            <h3 className="text-lg font-semibold mb-2">
-              Call Us
-            </h3>
-            <p className="text-sm text-gray-400">
-              India: +91 8547864741
-            </p>
+            <h3 className="text-lg font-semibold mb-2">Call Us</h3>
+            <p className="text-sm text-gray-400">India: +91 8547864741</p>
           </div>
           {/* Social Links */}
           <div className="mt-16 text-left">
-            <p className="mb-4 text-gray-400">
-              Follow Our Social Network
-            </p>
+            <p className="mb-4 text-gray-400">Follow Our Social Network</p>
             <div className="flex flex-wrap gap-4 text-white text-xl">
               <a
                 href="https://www.facebook.com/share/1BwtX9z58R/"
@@ -142,30 +100,39 @@ const ContactForm = () => {
         {/* Contact Form */}
         <div>
           <p className="text-2xl font-extrabold mb-6 leading-tight text-white">
-            Get in touch with Medobyte for innovative digital solutions that drive your business forward.
+            Get in touch with Medobyte for innovative digital solutions that
+            drive your business forward.
           </p>
-          <form className="grid gap-4" onSubmit={handleSubmit}>
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="grid gap-4"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"
+                name="Name"
                 placeholder="Name"
                 className="p-3 rounded bg-gray-800 text-white placeholder-gray-500"
                 required
               />
               <input
                 type="text"
+                name="Company"
                 placeholder="Company"
                 className="p-3 rounded bg-gray-800 text-white placeholder-gray-500"
                 required
               />
               <input
                 type="tel"
+                name="Phone"
                 placeholder="Phone"
                 className="p-3 rounded bg-gray-800 text-white placeholder-gray-500"
                 required
               />
               <input
                 type="email"
+                name="Email"
                 placeholder="Email"
                 className="p-3 rounded bg-gray-800 text-white placeholder-gray-500"
                 required
@@ -173,11 +140,13 @@ const ContactForm = () => {
             </div>
             <input
               type="text"
+              name="Subject"
               placeholder="Subject"
               className="p-3 rounded bg-gray-800 text-white placeholder-gray-500"
               required
             />
             <textarea
+              name="Message"
               placeholder="Message"
               rows="5"
               className="p-3 rounded bg-gray-800 text-white placeholder-gray-500"
@@ -191,6 +160,7 @@ const ContactForm = () => {
             </button>
           </form>
         </div>
+
       </div>
     </div>
   );
