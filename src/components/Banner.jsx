@@ -9,7 +9,7 @@ const Banner = () => {
       text: "Custom Website Development"
     },
     {
-      text: "Scalable eCommerce Solutions"
+      text: "Scalable E-Commerce Solutions"
     },
     {
       text: "Results-Driven Digital Marketing"
