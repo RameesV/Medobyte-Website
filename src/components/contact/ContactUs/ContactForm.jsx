@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
+import { toast } from "react-hot-toast";
 
 const ContactForm = () => {
   const formRef = useRef(null);
@@ -24,11 +25,11 @@ const ContactForm = () => {
         return res.json();
       })
       .then((data) => {
-        alert(data.msg || "Form submitted successfully!");
+        toast.success(data.msg || "Form submitted successfully!");
         formRef.current.reset();
       })
       .catch(() => {
-        alert("Submission failed. Please try again.");
+        toast.error("Submission failed. Please try again.");
       });
   };
 
