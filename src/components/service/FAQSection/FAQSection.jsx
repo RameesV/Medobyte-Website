@@ -64,7 +64,7 @@ We build sites that automatically adjust to different screen sizes, providing a 
                 className="w-full flex justify-between items-center p-6 sm:p-8 text-left focus:outline-none"
               >
                 <div className="flex items-center space-x-3">
-                  <HelpCircle className="text-red-600 w-6 h-6" />
+                  <HelpCircle className="text-red-800 w-6 h-6" />
                   <h3 className="text-xl sm:text-2xl font-semibold text-white">
                     {faq.question}
                   </h3>

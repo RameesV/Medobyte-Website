@@ -35,7 +35,7 @@ const Footer = () => {
                 href="https://www.facebook.com/share/1BwtX9z58R/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full"
+                className="bg-red-800 hover:bg-red-700 transition p-3 rounded-full"
               >
                 <Facebook className="w-5 h-5" />
               </a>
@@ -43,7 +43,7 @@ const Footer = () => {
                 href="https://www.instagram.com/medobyte.tech?igshid=MTNlcDR3eHl5MTZhcw=="
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full"
+                className="bg-red-800 hover:bg-red-700 transition p-3 rounded-full"
               >
                 <Instagram className="w-5 h-5" />
               </a>
@@ -59,7 +59,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/medobyte-technologies?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full"
+                className="bg-red-800 hover:bg-red-700 transition p-3 rounded-full"
               >
                 <Linkedin className="w-5 h-5" />
               </a>

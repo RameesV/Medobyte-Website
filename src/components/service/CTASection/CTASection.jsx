@@ -30,7 +30,7 @@ const CTASection = () => {
         >
           <a
             href="/contact"
-            className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-full transition-colors"
+            className="inline-flex items-center bg-red-800 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-full transition-colors"
           >
             Contact Us
             <ArrowRight className="ml-2 w-5 h-5" />
