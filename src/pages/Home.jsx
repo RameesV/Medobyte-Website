@@ -382,8 +382,8 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
           >
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-red-900 rounded-full flex items-center justify-center mr-4">
-                  <ShoppingCart className="w-6 h-6 text-[#818cf8]" />
+                <div className="w-12 h-12 bg-gray-900 border-2 border-[rgb(59_130_246_/_0.5)] rounded-full flex items-center justify-center mr-4">
+                  <ShoppingCart className="w-6 h-6 text-[rgb(59_130_246_/_0.5)]" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">E-commerce Solutions</h3>
               </div>
@@ -441,8 +441,8 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
           >
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                  <TrendingUp className="w-6 h-6 text-[#818cf8]" />
+                <div className="w-12 h-12 bg-gray-900 border-2 border-[rgb(59_130_246_/_0.5)] rounded-full flex items-center justify-center mr-4">
+                  <TrendingUp className="w-6 h-6 text-[rgb(59_130_246_/_0.5)]" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">Digital Marketing</h3>
               </div>
@@ -500,8 +500,8 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
           >
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                  <Code className="w-6 h-6 text-[#818cf8]" />
+                <div className="w-12 h-12 bg-gray-900 border-2 border-[rgb(59_130_246_/_0.5)] rounded-full flex items-center justify-center mr-4">
+                  <Code className="w-6 h-6 text-[rgb(59_130_246_/_0.5)]" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">Web Development</h3>
               </div>

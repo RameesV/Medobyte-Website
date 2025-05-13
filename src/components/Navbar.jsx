@@ -9,12 +9,17 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white shadow-lg fixed top-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-16 relative">
+          {/* Logo */}
           <div className="flex items-center">
-           <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center">
               <img className='w-[50px]' src="/images/MB-White-Logo.png" alt="" />
             </Link> 
-            
+          </div>
+
+          {/* Site Name - Mobile Only */}
+          <div className="md:hidden absolute inset-0 flex items-center justify-center">
+            <span className="text-2xl font-bold">Medobyte</span>
           </div>
 
           {/* Desktop Menu */}
