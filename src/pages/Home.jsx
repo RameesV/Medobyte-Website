@@ -176,7 +176,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
         {/* Banner Image with Overlay */}
         <div className="relative h-[400px] md:h-[400px] h-[600px] w-full">
           <img 
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            src="images/bg2.jpg"
             alt="Why Choose Us Banner"
             className="w-full h-full object-cover"
           />
@@ -418,7 +418,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             </div>
             <div className="lg:w-1/2 overflow-hidden rounded-lg relative">
               <img 
-                src="https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg"
+                src="images/card-img-1.webp"
                 alt="E-commerce Solutions"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
@@ -477,11 +477,11 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             </div>
             <div className="lg:w-1/2 overflow-hidden rounded-lg relative">
               <img 
-                src="https://img.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_53876-167088.jpg"
+                src="images/card-img-2.webp"
                 alt="Digital Marketing"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" />
+              {/* <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" /> */}
             </div>
           </motion.div>
 
@@ -536,11 +536,11 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             </div>
             <div className="lg:w-1/2 overflow-hidden rounded-lg relative">
               <img 
-                src="https://img.freepik.com/premium-photo/html-system-websites-concept_23-2150323528.jpg"
+                src="images/card-img-3.webp"
                 alt="Web Development"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" />
+              {/* <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" /> */}
             </div>
           </motion.div>
         </div>
