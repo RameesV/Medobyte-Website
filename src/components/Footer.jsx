@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
+            <h4 className="text-lg font-semibold mb-4 text-center">Connect With Us</h4>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/share/1BwtX9z58R/"
