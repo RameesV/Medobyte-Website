@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
            <Link to="/" className="flex items-center space-x-2">
-              <img className='w-[50px]' src="/images/MB-White-Logo.png" alt="" />
+              <img className='w-[100px]' src="/images/MB-Nav-Logo.png" alt="" />
             </Link> 
             
           </div>
