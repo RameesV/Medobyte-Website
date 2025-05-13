@@ -18,7 +18,7 @@ const About = () => {
         <div 
           className="relative shadow-xl px-4 sm:px-8 py-12 sm:py-20 w-full text-center overflow-hidden min-h-[400px] sm:min-h-[500px] flex items-center justify-center"
           style={{
-            backgroundImage: "url('https://i.pinimg.com/1200x/19/75/1d/19751d804d0bf3793cd2faad8443ecb8.jpg')",
+            backgroundImage: "url('images/BG12.png')",
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -28,13 +28,11 @@ const About = () => {
           <div className="relative z-10 max-w-3xl mx-auto px-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-100 to-white">About Us</h1>
             <div className="relative">
-              <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-1 h-16 bg-[#FF3333] hidden sm:block"></div>
               <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed">
                 MedoByte is a digital solutions provider specializing in custom website development, eCommerce, and digital marketing services. We empower businesses by delivering innovative, scalable, and results-driven strategies tailored to your needs. With a client-focused approach, we ensure seamless communication and a transparent, collaborative process. Our mission is to help you achieve long-term online success through expert digital solutions.
               </p>
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FF3333] to-transparent"></div>
         </div>
       </motion.div>
 
