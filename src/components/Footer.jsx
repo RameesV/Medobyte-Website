@@ -1,29 +1,32 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { SiWhatsapp } from "react-icons/si";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 justify-items-center">
           <div>
-            <img className='w-[100px]' src="/images/MB-White-Logo.png" alt="" />
+            <img className='w-[200px]' src="/images/MB-Nav-Logo.png" alt="" />
           </div>
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2">
-              <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">E-commerce Solutions</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Digital Marketing</a></li>
-            </ul>
+          <div className='grid grid-cols-2'>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Services</h4>
+              <ul className="space-y-2">
+                <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
+                <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">E-commerce Solutions</a></li>
+                <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Digital Marketing</a></li>
+              </ul>
+            </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
@@ -37,12 +40,20 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/medobyte.tech?igsh=MTNlcDR3eHl5MTZhcw=="
+                href="https://www.instagram.com/medobyte.tech?igshid=MTNlcDR3eHl5MTZhcw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-red-600 hover:bg-red-700 transition p-3 rounded-full"
               >
                 <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://wa.me/918547864741"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 hover:bg-red-700 transition p-3 rounded-full"
+              >
+                <SiWhatsapp className="w-5 h-5" />
               </a>
               <a
                 href="https://www.linkedin.com/in/medobyte-technologies?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
