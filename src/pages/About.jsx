@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
 import { motion } from 'framer-motion';
 import { Users, Target, Award } from 'lucide-react';
 
 const About = () => {
+    useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }, []);
   return (
     <div className="bg-gray-950">
       {/* About Medobyte Section */}

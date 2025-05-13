@@ -25,37 +25,37 @@ const Services = () => {
 
   const services = [
     {
-      icon: <ShoppingCart className="h-12 w-12 text-red-600" />,
+      icon: <ShoppingCart className="h-12 w-12 text-red-800" />,
       title: 'E-commerce Solutions',
       description: 'Custom online stores, payment integration, and inventory management systems.',
       features: ['Custom Store Design', 'Payment Gateway Integration', 'Inventory Management', 'Mobile Commerce']
     },
     {
-      icon: <TrendingUp className="h-12 w-12 text-red-600" />,
+      icon: <TrendingUp className="h-12 w-12 text-red-800" />,
       title: 'Digital Marketing',
       description: 'Comprehensive digital marketing strategies to grow your online presence.',
       features: ['SEO Optimization', 'Social Media Marketing', 'Content Strategy', 'Analytics & Reporting']
     },
     {
-      icon: <Search className="h-12 w-12 text-red-600" />,
+      icon: <Search className="h-12 w-12 text-red-800" />,
       title: 'SEO Services',
       description: 'Improve your search engine rankings and drive organic traffic.',
       features: ['Keyword Research', 'On-page SEO', 'Technical SEO', 'Link Building']
     },
     {
-      icon: <Mail className="h-12 w-12 text-red-600" />,
+      icon: <Mail className="h-12 w-12 text-red-800" />,
       title: 'Email Marketing',
       description: 'Engage your customers with targeted email campaigns.',
       features: ['Campaign Design', 'List Management', 'A/B Testing', 'Performance Analytics']
     },
     {
-      icon: <Share2 className="h-12 w-12 text-red-600" />,
+      icon: <Share2 className="h-12 w-12 text-red-800" />,
       title: 'Social Media Management',
       description: 'Build and maintain your brand presence across social platforms.',
       features: ['Content Creation', 'Community Management', 'Paid Advertising', 'Performance Tracking']
     },
     {
-      icon: <Globe className="h-12 w-12 text-red-600" />,
+      icon: <Globe className="h-12 w-12 text-red-800" />,
       title: 'Web Development',
       description: 'Custom website development with modern technologies.',
       features: ['Responsive Design', 'Custom Development', 'CMS Integration', 'Performance Optimization']

@@ -10,21 +10,21 @@ import {
 } from 'lucide-react';
 
 const services = [
-  { icon: <Code className="h-6 w-6 text-red-600" />, title: 'Full Stack Development', desc: 'Robust frontend & backend solutions tailored to your needs.' },
-  { icon: <FileText className="h-6 w-6 text-red-600" />, title: 'Content Development', desc: 'High-quality content aligned with your brand and goals.' },
-  { icon: <Wrench className="h-6 w-6 text-red-600" />, title: 'Application Maintenance', desc: 'Ongoing updates and support to keep your apps running smoothly.' },
-  { icon: <MonitorPlay className="h-6 w-6 text-red-600" />, title: 'Broadcast & Digital Marketing', desc: 'Multichannel strategies for brand reach and engagement.' },
-  { icon: <PenTool className="h-6 w-6 text-red-600" />, title: 'UI/UX Design', desc: 'Intuitive and visually appealing user interfaces.' },
-  { icon: <Smartphone className="h-6 w-6 text-red-600" />, title: 'Mobile App Development', desc: 'Scalable and secure iOS & Android app solutions.' },
-  { icon: <Settings className="h-6 w-6 text-red-600" />, title: 'DevOps & Automation', desc: 'CI/CD pipelines, infrastructure automation, and monitoring.' },
-  { icon: <Bug className="h-6 w-6 text-red-600" />, title: 'QA & Software Testing', desc: 'Ensure quality with rigorous manual and automated testing.' },
-  { icon: <Search className="h-6 w-6 text-red-600" />, title: 'Digital Marketing & SEO', desc: 'Grow visibility and traffic with proven strategies.' },
-  { icon: <ShoppingCart className="h-6 w-6 text-red-600" />, title: 'E-commerce Development', desc: 'Custom online stores with seamless shopping experiences.' },
-  { icon: <Package className="h-6 w-6 text-red-600" />, title: 'Custom Software Development', desc: 'Tailored software built around your business logic.' },
-  { icon: <Headphones className="h-6 w-6 text-red-600" />, title: 'Tech Support & Helpdesk', desc: 'Timely, reliable support when you need it most.' },
-  { icon: <PlugZap className="h-6 w-6 text-red-600" />, title: 'API Integration & Development', desc: 'Connect systems and build scalable integrations.' },
-  { icon: <Database className="h-6 w-6 text-red-600" />, title: 'Database Management', desc: 'Efficient, secure database architecture and monitoring.' },
-  { icon: <RefreshCw className="h-6 w-6 text-red-600" />, title: 'Migration & Modernization', desc: 'Update legacy systems to modern, scalable platforms.' }
+  { icon: <Code className="h-6 w-6 text-red-800" />, title: 'Full Stack Development', desc: 'Robust frontend & backend solutions tailored to your needs.' },
+  { icon: <FileText className="h-6 w-6 text-red-800" />, title: 'Content Development', desc: 'High-quality content aligned with your brand and goals.' },
+  { icon: <Wrench className="h-6 w-6 text-red-800" />, title: 'Application Maintenance', desc: 'Ongoing updates and support to keep your apps running smoothly.' },
+  { icon: <MonitorPlay className="h-6 w-6 text-red-800" />, title: 'Broadcast & Digital Marketing', desc: 'Multichannel strategies for brand reach and engagement.' },
+  { icon: <PenTool className="h-6 w-6 text-red-800" />, title: 'UI/UX Design', desc: 'Intuitive and visually appealing user interfaces.' },
+  { icon: <Smartphone className="h-6 w-6 text-red-800" />, title: 'Mobile App Development', desc: 'Scalable and secure iOS & Android app solutions.' },
+  { icon: <Settings className="h-6 w-6 text-red-800" />, title: 'DevOps & Automation', desc: 'CI/CD pipelines, infrastructure automation, and monitoring.' },
+  { icon: <Bug className="h-6 w-6 text-red-800" />, title: 'QA & Software Testing', desc: 'Ensure quality with rigorous manual and automated testing.' },
+  { icon: <Search className="h-6 w-6 text-red-800" />, title: 'Digital Marketing & SEO', desc: 'Grow visibility and traffic with proven strategies.' },
+  { icon: <ShoppingCart className="h-6 w-6 text-red-800" />, title: 'E-commerce Development', desc: 'Custom online stores with seamless shopping experiences.' },
+  { icon: <Package className="h-6 w-6 text-red-800" />, title: 'Custom Software Development', desc: 'Tailored software built around your business logic.' },
+  { icon: <Headphones className="h-6 w-6 text-red-800" />, title: 'Tech Support & Helpdesk', desc: 'Timely, reliable support when you need it most.' },
+  { icon: <PlugZap className="h-6 w-6 text-red-800" />, title: 'API Integration & Development', desc: 'Connect systems and build scalable integrations.' },
+  { icon: <Database className="h-6 w-6 text-red-800" />, title: 'Database Management', desc: 'Efficient, secure database architecture and monitoring.' },
+  { icon: <RefreshCw className="h-6 w-6 text-red-800" />, title: 'Migration & Modernization', desc: 'Update legacy systems to modern, scalable platforms.' }
 ];
 
 const ServiceCarousel = () => {
@@ -61,7 +61,7 @@ const ServiceCarousel = () => {
               <div className="relative overflow-visible">
                 <div className="bg-gray-800 border-2 border-gray-700 hover:bg-gray-700 transition-colors rounded-xl p-6 pt-16 h-[280px] flex flex-col items-start text-left shadow-lg relative">
                   {/* Circle icon */}
-                  <div className="absolute top-0 left-4 -translate-y-1/2 bg-gray-900 border-2 border-red-600 p-3 rounded-full shadow-lg z-10">
+                  <div className="absolute top-0 left-4 -translate-y-1/2 bg-gray-900 border-2 border-red-800 p-3 rounded-full shadow-lg z-10">
                     {service.icon}
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
@@ -92,7 +92,7 @@ const ServiceCarousel = () => {
           }
 
           .swiper-pagination-bullet-active.custom-line {
-            background-color: #dc2626; /* red-600 */
+            background-color: #dc2626; /* red-800 */
           }
         `}</style>
       </div>

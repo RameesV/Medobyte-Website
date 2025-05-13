@@ -83,12 +83,12 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              <ShoppingCart className="h-12 w-12 text-red-600 mx-auto mb-4" />,
-              <TrendingUp className="h-12 w-12 text-red-600 mx-auto mb-4" />,
-              <Globe className="h-12 w-12 text-red-600 mx-auto mb-4" />,
-              <Code className="h-12 w-12 text-red-600 mx-auto mb-4" />,
-              <Lightbulb className="h-12 w-12 text-red-600 mx-auto mb-4" />,
-              <Users className="h-12 w-12 text-red-600 mx-auto mb-4" />
+              <ShoppingCart className="h-12 w-12 text-red-800 mx-auto mb-4" />,
+              <TrendingUp className="h-12 w-12 text-red-800 mx-auto mb-4" />,
+              <Globe className="h-12 w-12 text-red-800 mx-auto mb-4" />,
+              <Code className="h-12 w-12 text-red-800 mx-auto mb-4" />,
+              <Lightbulb className="h-12 w-12 text-red-800 mx-auto mb-4" />,
+              <Users className="h-12 w-12 text-red-800 mx-auto mb-4" />
             ].map((icon, idx) => (
               <motion.div
                 key={idx}
@@ -133,30 +133,25 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
       <section className="pt-0 pb-12 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">Our Guiding Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Value Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="relative rounded-2xl overflow-hidden bg-cover bg-center min-h-[320px] flex flex-col justify-end p-8"
-              style={{backgroundImage: 'url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80)'}}
-            >
-              <div className="absolute inset-0 bg-black/70 z-0" />
-              <div className="relative z-10">
-                <span className="text-xl font-semibold text-red-500 mb-2">OUR VALUE</span>
-                <p className="text-gray-300 text-lg mb-6">At MedoByte, our core value lies in delivering innovative, reliable, and client-focused digital solutions that drive real growth. We are committed to building long-term partnerships by understanding our clients' unique needs and providing transparent, high-quality service across web development, eCommerce, and digital marketing. Your success is our mission.</p>
-              </div>
-            </motion.div>
-            <div className="flex flex-col gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
+                className="relative rounded-2xl bg-gray-900 p-8 flex-1 flex flex-col shadow-lg"
+              >
+                <span className="text-xl font-semibold text-white mb-2">OUR VALUE</span>
+                <p className="text-gray-300 text-lg">At MedoByte, our core value lies in delivering innovative, reliable, and client-focused digital solutions that drive real growth. We are committed to building long-term partnerships by understanding our clients' unique needs.</p>
+              </motion.div>
               {/* Mission Card */}
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.15 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="relative rounded-2xl bg-red-600 p-8 flex-1 flex flex-col justify-between shadow-lg"
+                className="relative rounded-2xl bg-red-800 p-8 flex-1 flex flex-col shadow-lg"
               >
                 <span className="text-xl font-semibold text-white mb-2">OUR MISSION</span>
                 <p className="text-gray-300 text-lg">To deliver exceptional web development, eCommerce, and digital marketing services by combining innovation, technology, and strategy—helping our clients achieve measurable success and stand out in the digital marketplace.</p>
@@ -167,12 +162,12 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.3 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="relative rounded-2xl bg-gray-900 p-8 flex-1 flex flex-col justify-between shadow-lg"
+                className="relative rounded-2xl bg-gray-900 p-8 flex-1 flex flex-col shadow-lg"
               >
                 <span className="text-xl font-semibold text-white mb-2">OUR VISION</span>
                 <p className="text-gray-300 text-lg">To empower businesses of all sizes with cutting-edge digital solutions that enhance online presence, drive sustainable growth, and foster lasting customer engagement in an ever-evolving digital world.</p>
               </motion.div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </section>
@@ -225,15 +220,15 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       Certified professionals
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       Industry expertise
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       Continuous training
                     </li>
                   </ul>
@@ -260,15 +255,15 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       Latest technologies
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       Creative approaches
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       Future-proof solutions
                     </li>
                   </ul>
@@ -298,15 +293,15 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center transition-transform duration-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       <span className="text-white">Round-the-clock assistance</span>
                     </li>
                     <li className="flex items-center  transition-transform duration-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       <span className="text-white">Quick response times</span>
                     </li>
                     <li className="flex items-center  transition-transform duration-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       <span className="text-white">Dedicated account managers</span>
                     </li>
                   </ul>
@@ -333,15 +328,15 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       Data-driven approach
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       Measurable ROI
                     </li>
                     <li className="flex items-center text-gray-300">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-red-800 rounded-full mr-3"></span>
                       Success metrics
                     </li>
                   </ul>
@@ -392,28 +387,28 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Custom Development</h4>
                     <p className="text-gray-300">Tailored solutions for your unique business needs</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Payment Integration</h4>
                     <p className="text-gray-300">Secure and seamless payment processing</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Inventory Management</h4>
                     <p className="text-gray-300">Efficient stock control and order processing</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Analytics & Insights</h4>
                     <p className="text-gray-300">Data-driven decisions for growth</p>
@@ -451,28 +446,28 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">SEO Optimization</h4>
                     <p className="text-gray-300">Improve your search engine rankings</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Social Media</h4>
                     <p className="text-gray-300">Engage with your audience effectively</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Content Strategy</h4>
                     <p className="text-gray-300">Create compelling content that converts</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Analytics & Reporting</h4>
                     <p className="text-gray-300">Track and optimize your campaigns</p>
@@ -510,28 +505,28 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Custom Development</h4>
                     <p className="text-gray-300">Tailored to your specific needs</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Responsive Design</h4>
                     <p className="text-gray-300">Perfect on all devices</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Performance</h4>
                     <p className="text-gray-300">Lightning-fast loading times</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3"></span>
+                  <span className="w-2 h-2 bg-red-800 rounded-full mt-2 mr-3"></span>
                   <div>
                     <h4 className="font-semibold text-white">Security</h4>
                     <p className="text-gray-300">Enterprise-grade protection</p>
@@ -561,7 +556,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-red-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition-colors"
+                className="bg-red-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition-colors"
               >
                 Contact Us Today
               </motion.button>
