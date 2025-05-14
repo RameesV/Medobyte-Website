@@ -103,6 +103,84 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+
+      <section class="w-full bg-gray py-12">
+        <div
+          className="max-w-6xl mx-auto w-full bg-white h-60 bg-cover bg-center rounded-lg relative flex flex-row-reverse mb-8"
+          style={{ backgroundImage: "url('images/Bg4.jpg')" }}
+        >
+          <div className="absolute inset-0 rounded-lg"></div>
+          <div className="relative z-10 h-full flex items-center px-6 sm:px-12 w-1/2">
+            <div className="text-white">
+              <h2 className="text-xl sm:text-3xl font-semibold mb-2">Our Values</h2>
+              <p className="text-sm sm:text-base">
+                At Medobyte Technologies, we follow a structured and collaborative approach to deliver exceptional e-commerce solutions.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        {/* <div class="w-full flex justify-center">
+          <div class="w-2 h-20 bg-gray-400"></div>
+        </div> */}
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-2 text-left">Discovery & Planning</h3>
+            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+              <li>Understand client goals</li>
+              <li>Research audience & trends</li>
+              <li>Customized plan & timeline</li>
+            </ul>
+          </div>
+          
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-2 text-left">Design & Development</h3>
+            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+              <li>Wireframes & prototypes</li>
+              <li>Custom e-commerce builds</li>
+              <li>API integrations</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-2 text-left">Testing & QA</h3>
+            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+              <li>Functionality & performance</li>
+              <li>User acceptance testing</li>
+              <li>Compliance & best practices</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-2 text-left">Launch & Deployment</h3>
+            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+              <li>Production deployment</li>
+              <li>Analytics setup</li>
+              <li>Training & handover</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-2 text-left">Ongoing Support</h3>
+            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+              <li>Security updates</li>
+              <li>Performance optimization</li>
+              <li>Ongoing assistance</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-2 text-left">Benefits of Our Process</h3>
+            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+              <li>Transperancy</li>
+              <li>Flexibility</li>
+              <li>Quality</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
