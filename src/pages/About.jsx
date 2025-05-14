@@ -49,7 +49,7 @@ const About = () => {
             {/* Client Focus Card */}
             <div className="group bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl shadow-lg p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="bg-blue-500/10 rounded-full p-3 sm:p-4 mb-4">
-                <Users className="h-8 w-8 sm:h-12 sm:w-12 text-blue-400 group-hover:text-blue-600 transition" />
+                <Users className="h-8 w-8 sm:h-12 sm:w-12 text-red-800 group-hover:text-blue-600 transition" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">Client Focus</h3>
               <p className="text-sm sm:text-base text-gray-300">We take the time to understand your specific goals and challenges, ensuring that every solution is tailored to meet your unique needs. Our dedicated team works closely with you throughout the entire process, providing clear communication and delivering results that align with your vision. Your success is our priority.</p>
@@ -57,7 +57,7 @@ const About = () => {
             {/* Innovation Card */}
             <div className="group bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl shadow-lg p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="bg-purple-500/10 rounded-full p-3 sm:p-4 mb-4">
-                <Target className="h-8 w-8 sm:h-12 sm:w-12 text-purple-400 group-hover:text-purple-600 transition" />
+                <Target className="h-8 w-8 sm:h-12 sm:w-12 text-red-800 group-hover:text-purple-600 transition" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">Innovation</h3>
               <p className="text-sm sm:text-base text-gray-300">We continuously explore the latest technologies and trends to create cutting-edge solutions that drive business growth. By combining creativity with technical expertise, we deliver forward-thinking strategies that help you stay ahead of the competition and achieve your digital goals.</p>
@@ -65,7 +65,7 @@ const About = () => {
             {/* Excellence Card */}
             <div className="group bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl shadow-lg p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="bg-pink-500/10 rounded-full p-3 sm:p-4 mb-4">
-                <Award className="h-8 w-8 sm:h-12 sm:w-12 text-pink-400 group-hover:text-pink-600 transition" />
+                <Award className="h-8 w-8 sm:h-12 sm:w-12 text-red-800 group-hover:text-pink-600 transition" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">Excellence</h3>
               <p className="text-sm sm:text-base text-gray-300">We are committed to delivering excellence in every project we undertake. From design to development, our team strives for the highest standards, ensuring top-quality solutions that exceed expectations. We focus on precision, attention to detail, and continuous improvement to ensure your business achieves lasting success in the digital world.</p>
