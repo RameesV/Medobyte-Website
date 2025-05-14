@@ -422,7 +422,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 alt="E-commerce Solutions"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" />
+              {/* <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" /> */}
             </div>
           </motion.div>
 
