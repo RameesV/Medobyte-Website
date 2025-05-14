@@ -37,36 +37,6 @@ const About = () => {
       </motion.div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-        {/* About Feature Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-10">
-          {/* Top Right Card */}
-          <div className="group relative rounded-2xl bg-red-500 text-white p-6 sm:p-8 flex flex-col justify-between min-h-[180px] sm:min-h-[200px] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <div>
-              <span className="font-semibold uppercase text-xs sm:text-sm tracking-wider">Our Mission</span>
-              <h3 className="text-xl sm:text-2xl font-bold mt-2 mb-2">Managed IT Mastery: Enhancing Operations with Expert Support</h3>
-              <p className="text-sm sm:text-base">Our mission is to develop Websites and Software that are most reliable and cost-efficient in a timely manner and to provide customized services which suit all your designing and developing needs.</p>
-            </div>
-            <div className="absolute top-4 right-4">
-              <div className="bg-black/30 rounded-full p-2 group-hover:scale-110 transition-transform duration-300">
-                <svg xmlns='http://www.w3.org/2000/svg' className='h-5 w-5 sm:h-6 sm:w-6 text-white' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M7 17L17 7M7 7h10v10' /></svg>
-              </div>
-            </div>
-          </div>
-          {/* Bottom Right Card */}
-          <div className="group relative rounded-2xl bg-gray-900 text-white p-6 sm:p-8 flex flex-col justify-between min-h-[180px] sm:min-h-[200px] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-            <div>
-              <span className="font-semibold uppercase text-xs sm:text-sm tracking-wider">Our Vision</span>
-              <h3 className="text-xl sm:text-2xl font-bold mt-2 mb-2">Crafting Tomorrow's Solutions: Medobyte Web Development Insights</h3>
-              <p className="text-sm sm:text-base">Our passion for what we do led us here. Our vision is to provide the world with the best IT consulting and software development services while taking care of our people and honoring our values.</p>
-            </div>
-            <div className="absolute top-4 right-4">
-              <div className="bg-red-500 rounded-full p-2 group-hover:scale-110 transition-transform duration-300">
-                <svg xmlns='http://www.w3.org/2000/svg' className='h-5 w-5 sm:h-6 sm:w-6 text-white' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M7 17L17 7M7 7h10v10' /></svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Core Values */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -126,7 +96,7 @@ const About = () => {
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Discovery & Planning</h3>
-            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
               <li>Understand client goals</li>
               <li>Research audience & trends</li>
               <li>Customized plan & timeline</li>
@@ -135,7 +105,7 @@ const About = () => {
           
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Design & Development</h3>
-            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
               <li>Wireframes & prototypes</li>
               <li>Custom e-commerce builds</li>
               <li>API integrations</li>
@@ -144,7 +114,7 @@ const About = () => {
 
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Testing & QA</h3>
-            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
               <li>Functionality & performance</li>
               <li>User acceptance testing</li>
               <li>Compliance & best practices</li>
@@ -155,7 +125,7 @@ const About = () => {
         <div class="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Launch & Deployment</h3>
-            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
               <li>Production deployment</li>
               <li>Analytics setup</li>
               <li>Training & handover</li>
@@ -164,7 +134,7 @@ const About = () => {
 
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Ongoing Support</h3>
-            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
               <li>Security updates</li>
               <li>Performance optimization</li>
               <li>Ongoing assistance</li>
@@ -173,7 +143,7 @@ const About = () => {
 
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Benefits of Our Process</h3>
-            <ul class="text-sm text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
               <li>Transperancy</li>
               <li>Flexibility</li>
               <li>Quality</li>
