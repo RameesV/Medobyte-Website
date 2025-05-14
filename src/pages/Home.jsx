@@ -176,7 +176,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
         {/* Banner Image with Overlay */}
         <div className="relative h-[400px] md:h-[400px] h-[600px] w-full">
           <img 
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            src="images/bg2.jpg"
             alt="Why Choose Us Banner"
             className="w-full h-full object-cover"
           />
@@ -207,11 +207,11 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 transition={{ duration: 0.5 }}
                 className="bg-black p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-red-800/10 to-purple-800/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
-                      <Users className="w-6 h-6 text-[#818cf8]" />
+                    <div className="w-12 h-12 bg-red-800 rounded-full flex items-center justify-center mr-4">
+                      <Users className="w-6 h-6 text-[#ffffff]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Expert Team</h3>
                   </div>
@@ -242,11 +242,11 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="bg-black p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-red-800/10 to-purple-800/10 opacity-00 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                      <Lightbulb className="w-6 h-6 text-[#818cf8]" />
+                    <div className="w-12 h-12 bg-red-800 rounded-full flex items-center justify-center mr-4">
+                      <Lightbulb className="w-6 h-6 text-[#ffffff]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Innovative Solutions</h3>
                   </div>
@@ -280,11 +280,11 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="bg-black p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-red-800/10 to-purple-800/10 opacity-0group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                      <Clock className="w-6 h-6 text-[#818cf8]" />
+                    <div className="w-12 h-12 bg-red-800 rounded-full flex items-center justify-center mr-4">
+                      <Clock className="w-6 h-6 text-[#ffffff]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">24/7 Support</h3>
                   </div>
@@ -315,11 +315,11 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="bg-black p-8 rounded-2xl shadow-xl relative overflow-hidden group cursor-pointer"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-red-800/10 to-purple-800/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
-                      <TrendingUp className="w-6 h-6 text-[#818cf8]" />
+                    <div className="w-12 h-12 bg-red-800 rounded-full flex items-center justify-center mr-4">
+                      <TrendingUp className="w-6 h-6 text-[#ffffff]" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">Proven Results</h3>
                   </div>
@@ -377,8 +377,8 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
           >
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-red-900 rounded-full flex items-center justify-center mr-4">
-                  <ShoppingCart className="w-6 h-6 text-[#818cf8]" />
+                <div className="w-12 h-12 bg-red-800 rounded-full flex items-center justify-center mr-4">
+                  <ShoppingCart className="w-6 h-6 text-[#ffffff]" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">E-commerce Solutions</h3>
               </div>
@@ -418,11 +418,11 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             </div>
             <div className="lg:w-1/2 overflow-hidden rounded-lg relative">
               <img 
-                src="https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg"
+                src="images/card-img-1.webp"
                 alt="E-commerce Solutions"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" />
+              {/* <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" /> */}
             </div>
           </motion.div>
 
@@ -436,8 +436,8 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
           >
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                  <TrendingUp className="w-6 h-6 text-[#818cf8]" />
+                <div className="w-12 h-12 bg-red-800 rounded-full flex items-center justify-center mr-4">
+                  <TrendingUp className="w-6 h-6 text-[#ffffff]" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">Digital Marketing</h3>
               </div>
@@ -477,11 +477,11 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             </div>
             <div className="lg:w-1/2 overflow-hidden rounded-lg relative">
               <img 
-                src="https://img.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_53876-167088.jpg"
+                src="images/card-img-2.webp"
                 alt="Digital Marketing"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" />
+              {/* <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" /> */}
             </div>
           </motion.div>
 
@@ -495,8 +495,8 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
           >
             <div className="lg:w-1/2">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                  <Code className="w-6 h-6 text-[#818cf8]" />
+                <div className="w-12 h-12 bg-red-800 rounded-full flex items-center justify-center mr-4">
+                  <Code className="w-6 h-6 text-[#ffffff]" />
                 </div>
                 <h3 className="text-3xl font-bold text-white">Web Development</h3>
               </div>
@@ -536,11 +536,11 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
             </div>
             <div className="lg:w-1/2 overflow-hidden rounded-lg relative">
               <img 
-                src="https://img.freepik.com/premium-photo/html-system-websites-concept_23-2150323528.jpg"
+                src="images/card-img-3.webp"
                 alt="Web Development"
                 className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" />
+              {/* <div className="absolute inset-0 bg-black/70 rounded-lg pointer-events-none" /> */}
             </div>
           </motion.div>
         </div>
