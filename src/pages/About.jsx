@@ -96,7 +96,7 @@ const About = () => {
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Discovery & Planning</h3>
-            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left marker:text-red-800">
               <li>Understand client goals</li>
               <li>Research audience & trends</li>
               <li>Customized plan & timeline</li>
@@ -105,7 +105,7 @@ const About = () => {
           
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Design & Development</h3>
-            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left marker:text-red-800">
               <li>Wireframes & prototypes</li>
               <li>Custom e-commerce builds</li>
               <li>API integrations</li>
@@ -114,7 +114,7 @@ const About = () => {
 
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Testing & QA</h3>
-            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left marker:text-red-800">
               <li>Functionality & performance</li>
               <li>User acceptance testing</li>
               <li>Compliance & best practices</li>
@@ -125,7 +125,7 @@ const About = () => {
         <div class="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Launch & Deployment</h3>
-            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left marker:text-red-800">
               <li>Production deployment</li>
               <li>Analytics setup</li>
               <li>Training & handover</li>
@@ -134,7 +134,7 @@ const About = () => {
 
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Ongoing Support</h3>
-            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left marker:text-red-800">
               <li>Security updates</li>
               <li>Performance optimization</li>
               <li>Ongoing assistance</li>
@@ -143,7 +143,7 @@ const About = () => {
 
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-2 text-left">Benefits of Our Process</h3>
-            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left">
+            <ul class="text-sm sm:text-base text-gray-600 list-disc list-inside text-left marker:text-red-800">
               <li>Transperancy</li>
               <li>Flexibility</li>
               <li>Quality</li>
