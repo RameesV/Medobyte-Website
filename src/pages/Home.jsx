@@ -176,7 +176,7 @@ At MedoByte, we specialize in professional website development, eCommerce soluti
         {/* Banner Image with Overlay */}
         <div className="relative h-[400px] md:h-[400px] h-[600px] w-full">
           <img 
-            src="images/bg2.jpg"
+            src="images/bg2.webp"
             alt="Why Choose Us Banner"
             className="w-full h-full object-cover"
           />

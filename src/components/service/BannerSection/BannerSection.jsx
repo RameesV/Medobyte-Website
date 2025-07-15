@@ -7,7 +7,7 @@ const BannerSection = () => {
     <div
       className="relative mt-16 bg-cover bg-center bg-no-repeat h-[550px]"
       style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/BG9.png')`,
+        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/BG9.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

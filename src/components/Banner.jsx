@@ -31,7 +31,7 @@ const Banner = () => {
       <div 
         className="relative bg-cover bg-center h-[300px] md:h-[400px]"
         style={{
-          backgroundImage: 'url("images/Bg5.png")'
+          backgroundImage: 'url("images/Bg5.webp")'
         }}
       >
         {/* Content Overlay */}

@@ -18,7 +18,7 @@ const About = () => {
         <div 
           className="relative shadow-xl px-4 sm:px-8 py-12 sm:py-20 w-full text-center overflow-hidden min-h-[400px] sm:min-h-[500px] flex items-center justify-center"
           style={{
-            backgroundImage: "url('images/BG12.png')",
+            backgroundImage: "url('images/BG12.webp')",
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -77,7 +77,7 @@ const About = () => {
       <section class="w-full bg-gray py-12">
         <div
           className="max-w-6xl mx-auto w-full bg-white h-60 bg-cover bg-center rounded-lg relative flex flex-row-reverse mb-8"
-          style={{ backgroundImage: "url('images/Bg4.jpg')" }}
+          style={{ backgroundImage: "url('images/Bg4.webp')" }}
         >
           <div className="absolute inset-0 rounded-lg"></div>
           <div className="relative z-10 h-full flex items-center px-6 sm:px-12 w-1/2">
