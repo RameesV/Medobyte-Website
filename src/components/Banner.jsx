@@ -48,7 +48,7 @@ const Banner = () => {
               transition={{ duration: 0.5 }}
               className="text-center p-4 text-white"
             >
-              <div className="text-4xl font-bold mb-2">{contents[currentIndex].text}</div>
+              <h1 className="text-4xl font-bold mb-2">{contents[currentIndex].text}</h1>
             </motion.div>
           </AnimatePresence>
         </div>

@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           <div className='grid grid-cols-2'>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
                 <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
@@ -20,7 +20,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Services</h4>
+              <h3 className="text-lg font-semibold mb-4">Services</h3>
               <ul className="space-y-2">
                 <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
                 <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">E-commerce Solutions</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-center">Connect With Us</h4>
+            <h3 className="text-lg font-semibold mb-4 text-center">Connect With Us</h3>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/share/1BwtX9z58R/"
